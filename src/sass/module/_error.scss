@@ -1,0 +1,41 @@
+.error {
+  color: #fff;
+  text-align: center;
+  letter-spacing: 2px;
+  padding-bottom: rem(118);
+
+  @include mq(md) {
+    padding-bottom: rem(150);
+  }
+}
+
+.error__title {
+  font-size: rem(40);
+  color: #FFEA2E;
+  opacity: 0.3;
+
+  @include mq(md) {
+    font-size: rem(60);
+  }
+}
+
+.error__text {
+  font-size: rem(20);
+  padding-top: rem(69);
+
+  @include mq(md) {
+    font-size: rem(30);
+    padding-top: rem(46);
+  }
+}
+
+.error__btn {
+  @include mq(md) {
+    margin: auto;
+    width: 100%;
+    max-width: rem(360);
+    margin-top: rem(74);
+    text-transform: uppercase;
+  }
+}
+

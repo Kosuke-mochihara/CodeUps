@@ -1,0 +1,7 @@
+.error-top {
+  margin-top: rem(117);
+
+  @include mq(md){
+    margin-top:rem(174);
+  }
+}
