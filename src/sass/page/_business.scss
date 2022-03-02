@@ -1,0 +1,147 @@
+// businessページ
+.business-menu {
+  color: #fff;
+  padding-left: rem(20);
+  margin-top: rem(16);
+}
+
+// 下記の記述があるとPCでflexした際に消える
+// .business__img {
+//   padding-top: 69.786096256684491979%;
+//   position: relative;
+// }
+
+// .business__img img {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover;
+// }
+
+
+.business__box {
+  color: #fff;
+  margin-bottom: rem(32);
+  letter-spacing: 2px;
+}
+
+.business-title {
+  font-size: rem(20);
+  font-weight: 400;
+  text-align: center;
+
+  @include mq(md) {
+    text-align: center;
+    font-size: rem(25);
+  }
+}
+
+.business-title__left{
+  @include mq(md){
+    text-align: left;
+  }
+}
+
+.business-text__pc {
+  @include mq(md){
+    line-height: 2.1875;
+    text-align: center;
+  }
+}
+
+.business-text__pc--box {
+
+  @include mq(md) {
+    padding-top: rem(24);
+  }
+}
+
+.business__contents {
+  @include mq(md) {
+    margin-top: rem(150);
+    margin-bottom: rem(150);
+  }
+}
+
+.business__wrapper {
+  @include mq(md) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: rem(104);
+  }
+}
+
+.business__wrapper:first-child{
+  @include mq(md){
+    padding-top: 0;
+  }
+}
+
+.business__wrapper:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.business__img {
+  @include mq(md) {
+    width: 50%;
+    height: auto;
+  }
+}
+
+.business-text {
+  font-size: rem(16);
+  padding-top: rem(23);
+  padding-bottom: rem(48);
+  letter-spacing: 0.2em;
+
+  @include mq(md){
+    padding-top: rem(40);
+    letter-spacing: 0.05em;
+    line-height: 2.1875;
+  }
+}
+
+.business__box--bottom {
+  color: #fff;
+  letter-spacing: 0.2em;
+  margin-top: rem(24);
+
+  @include mq(md) {
+    margin-top: rem(20);
+    width: 46.363636%;
+    height: auto;
+  }
+}
+
+
+.mt-72 {
+  margin-top: rem(72);
+}
+
+.mt-69 {
+  margin-top: rem(69);
+}
+
+.breadcrumb {
+  margin-top: rem(16);
+  padding-right: rem(20);
+}
+
+.breadcrumb__item {
+  color: #fff;
+  display: inline;
+}
+
+.breadcrumb__item:after {
+  content: '>';
+  padding: 0 rem(4);
+  color: #fff;
+}
+
+.breadcrumb__item:last-child:after {
+  content: '';
+}
+

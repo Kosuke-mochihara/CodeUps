@@ -1,0 +1,19 @@
+.btn {
+  display: block;
+  color: #fff;
+  background-color: #333;
+  font-size: rem(20);
+  border: 1px solid #fff;
+  padding-top: rem(10);
+  padding-bottom: rem(8);
+  letter-spacing: 2px;
+
+  @include mq(md) {
+    font-size: rem(16);
+    padding-top: rem(2);
+    padding-bottom: rem(2);
+    line-height: 3.375;
+    width: 100%;
+    min-width: rem(360);
+  }
+}

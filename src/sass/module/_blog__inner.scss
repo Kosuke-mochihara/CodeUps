@@ -1,0 +1,9 @@
+.blog__inner {
+  padding-left: rem(18);
+  padding-right: rem(22);
+
+  @include mq(md) {
+    padding-left: rem(90);
+    padding-right: rem(90);
+  }
+}

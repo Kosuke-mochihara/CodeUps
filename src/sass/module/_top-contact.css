@@ -1,0 +1,4 @@
+.top-contact {
+  margin-top: rem(120);
+  @mq {}
+}

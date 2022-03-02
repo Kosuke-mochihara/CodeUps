@@ -1,0 +1,49 @@
+.contact__head {
+  color: #fff;
+  font-size: rem(14);
+  letter-spacing: 0.07em;
+  margin-top: rem(32);
+}
+
+.contact__item {
+  color: #111;
+  background-color: #fff;
+  margin-top: rem(16);
+}
+
+.contact-text__text {
+  font-size: rem(14);
+  padding-top: rem(10);
+  padding-left: rem(9);
+  padding-right: rem(9);
+  padding-bottom: rem(9);
+  width: 100%;
+  height: rem(45);
+}
+
+.contact-textarea__text {
+  width: 100%;
+  height: rem(250);
+  padding-top: rem(16);
+  padding-left: rem(7);
+  padding-right: rem(7);
+}
+
+.contact__form-btn {
+  text-align: center;
+  letter-spacing: 0.2em;
+  margin-top: rem(48);
+}
+
+.btn.contact__top-btn--bg {
+  color: #333;
+  background-color: #fff;
+}
+
+.breadcrumb__item--contact::after {
+  padding-right: 0;
+}
+
+.mt-62 {
+  margin-top: rem(62);
+}

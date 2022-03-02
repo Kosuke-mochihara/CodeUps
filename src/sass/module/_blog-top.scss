@@ -1,0 +1,17 @@
+.blog-top {
+  margin-top: rem(89);
+
+  @include mq(md) {
+    margin-top: rem(128);
+  }
+}
+
+.blog__position {
+  left: 50%;
+  transform: translateX(-50%);
+
+  @include mq(md) {
+    left: 78%;
+  }
+
+}

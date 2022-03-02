@@ -1,0 +1,33 @@
+.contact__wrapper {
+    @include mq(md) {
+        padding-left: rem(123);
+        padding-right: rem(280);
+        margin-top: rem(13);
+    }
+}
+
+.contact__content {
+    @include mq(md) {
+        display: flex;
+    }
+}
+
+.contact__alert {
+    color: #FF5757;
+    text-align: center;
+    letter-spacing: 0.2em;
+}
+
+.news-menu.error {
+    padding-bottom: rem(23);
+}
+
+.mt-23 {
+    margin-top: rem(23);
+}
+
+.contact__content.is-sp {
+    @include mq(md) {
+        display: none;
+    }
+}

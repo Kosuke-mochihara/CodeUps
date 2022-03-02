@@ -1,0 +1,29 @@
+.contact-finish__contents{
+    color: #fff;
+    text-align: center;
+    font-size: rem(20);
+    letter-spacing: 0.2em;
+    margin-top: rem(130);
+
+    @include mq(md){
+        margin-top: rem(150);
+    }
+}
+
+.contact-finish__text{
+    margin-bottom: rem(79);
+
+    @include mq(md){
+        font-size: rem(30);
+        margin-bottom: rem(80);
+    }
+}
+
+.contact-finish-btn{
+    text-align: center;
+    letter-spacing: 0.2em;
+    @include mq(md){
+        max-width: rem(360);
+        margin: 0 auto;
+    }
+}

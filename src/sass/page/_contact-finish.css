@@ -1,0 +1,20 @@
+.contact-finish__contents {
+  color: #fff;
+  text-align: center;
+  font-size: rem(20);
+  letter-spacing: 0.2em;
+  margin-top: rem(130);
+}
+
+.pcontact-finish__text {
+  margin-bottom: rem(79);
+}
+
+.contact-finish-btn {
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+
+.footer__contact-finish {
+  margin-top: rem(120);
+}

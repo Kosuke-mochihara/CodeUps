@@ -1,0 +1,31 @@
+.footer__contents--sp {
+  text-align: center;
+
+  @include mq(md) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+  }
+}
+
+.footer__contents--pc {
+  text-align: center;
+  display: none;
+
+  @include mq(md) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.footer__contents {
+  text-align: center;
+
+  @include mq(md) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

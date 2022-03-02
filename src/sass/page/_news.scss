@@ -1,0 +1,31 @@
+
+.mb-30 {
+  margin-bottom: rem(30);
+}
+
+.news-menu {
+  display: flex;
+  padding-top: rem(16);
+  padding-bottom: rem(85);
+  color: #fff;
+  background-color: #000;
+  letter-spacing: 1px;
+  padding-left: rem(20);
+}
+
+.news-menu__item {
+  margin-right: rem(6);
+}
+
+.news-menu__item.mr0 {
+  margin-right: 0;
+}
+
+
+.subtitle--hover-yellow:hover {
+  color: #F9F871;
+}
+
+.mb-85 {
+  margin-bottom: rem(85);
+}

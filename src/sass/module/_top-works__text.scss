@@ -1,0 +1,14 @@
+.top-works__text {
+  padding-top: rem(21);
+  text-align: left;
+  letter-spacing: 2px;
+
+  @include mq(md) {
+    padding-top: rem(40);
+    letter-spacing: 0.5px;
+    line-height: 2.18;
+  }
+
+}
+
+

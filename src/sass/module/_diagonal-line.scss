@@ -1,0 +1,10 @@
+.diagonal-line {
+  background: linear-gradient(61.09deg, #000 0% 64.5%, #D1E28A 64.5% 64.7%, #000 64.7% 100%);
+
+  @include mq(md) {
+    background: linear-gradient(45deg, #000 0% 50.4%, #D1E28A 50.6% 50.4%, #000 50.4% 100%);
+    max-width: rem(1280);
+    width: 100%;
+    margin: auto;
+  }
+}

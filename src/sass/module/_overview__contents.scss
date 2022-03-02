@@ -1,0 +1,29 @@
+.overview-contents__title {
+  font-size: rem(20);
+  letter-spacing: 2px;
+  padding-top: rem(26);
+  padding-left: rem(19);
+
+  @include mq(md) {
+    text-align: left;
+    font-size: rem(25);
+    letter-spacing: 0.5px;
+    padding-left: rem(0);
+  }
+}
+
+.overview-contents__text {
+  letter-spacing: 2px;
+  font-size: rem(16);
+  padding-top: rem(21);
+  text-align: left;
+  line-height: 1.5;
+
+  @include mq(md) {
+    width: 100%;
+    text-align: left;
+    letter-spacing: 0.5px;
+    padding-top: rem(38);
+    line-height: 2.1875;
+  }
+}
