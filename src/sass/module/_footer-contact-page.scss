@@ -1,8 +1,5 @@
-.top-contact {
-  margin-top: rem(120);
-
+.footer-contact-page {
   @include mq(md) {
     margin-top: rem(150);
   }
 }
-

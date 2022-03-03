@@ -1,0 +1,51 @@
+.contact-completed {
+  color: #fff;
+  text-align: center;
+  letter-spacing: 2px;
+  padding-bottom: rem(121);
+
+  @include mq(md) {
+    padding-bottom: rem(150);
+  }
+}
+
+.contact-completed-inner {
+  padding-left: rem(22);
+  padding-right: rem(19);
+
+  @include mq(md) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.contact-completed__title {
+  font-size: rem(20);
+
+  @include mq(md) {
+    font-size: rem(30);
+  }
+}
+
+.contact-completed__text {
+  font-size: rem(20);
+  padding-top: rem(78);
+
+  @include mq(md) {
+    font-size: rem(30);
+    padding-top: rem(70);
+  }
+}
+
+.contact-completed__btn {
+  padding-top: rem(79);
+  text-transform: uppercase;
+
+  @include mq(md) {
+    margin: auto;
+    width: 100%;
+    max-width: rem(360);
+    margin-top: rem(-6);
+  }
+}
+

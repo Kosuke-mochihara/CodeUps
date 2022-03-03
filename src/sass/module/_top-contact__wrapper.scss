@@ -1,0 +1,5 @@
+.top-contact__wrapper {
+  @include mq(md) {
+    padding-top: rem(86);
+  }
+}

@@ -60,6 +60,17 @@
 
   @include mq(md) {
     font-size: rem(50);
+  }
+}
+
+.mainvisual__title--contact-page {
+  font-size: rem(30);
+  font-weight: bold;
+  min-width: rem(345);
+  letter-spacing: 1.5px;
+
+  @include mq(md) {
+    font-size: rem(36);
     letter-spacing: 0.5px;
   }
 }

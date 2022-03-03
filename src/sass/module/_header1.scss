@@ -37,16 +37,11 @@
 
 
 
-.header2__logo {
-  @include mq(md) {
-    width: 100%;
-    max-width: rem(94);
-  }
-}
+
 
 .header__drawer {
   position: absolute;
-  top: rem(9.5);
+  top: rem(13.5);
   right: rem(21);
 }
 
@@ -87,7 +82,7 @@
 .header2__logo {
   @include mq(md) {
     width: 100%;
-    max-width: rem(94);
+    max-width: rem(101);
   }
 }
 

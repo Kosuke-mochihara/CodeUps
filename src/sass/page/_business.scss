@@ -39,14 +39,14 @@
   }
 }
 
-.business-title__left{
-  @include mq(md){
+.business-title__left {
+  @include mq(md) {
     text-align: left;
   }
 }
 
 .business-text__pc {
-  @include mq(md){
+  @include mq(md) {
     line-height: 2.1875;
     text-align: center;
   }
@@ -74,8 +74,8 @@
   }
 }
 
-.business__wrapper:first-child{
-  @include mq(md){
+.business__wrapper:first-child {
+  @include mq(md) {
     padding-top: 0;
   }
 }
@@ -97,7 +97,7 @@
   padding-bottom: rem(48);
   letter-spacing: 0.2em;
 
-  @include mq(md){
+  @include mq(md) {
     padding-top: rem(40);
     letter-spacing: 0.05em;
     line-height: 2.1875;
@@ -126,7 +126,7 @@
 }
 
 .breadcrumb {
-  margin-top: rem(16);
+  margin-top: rem(12);
   padding-right: rem(20);
 }
 
@@ -137,11 +137,10 @@
 
 .breadcrumb__item:after {
   content: '>';
-  padding: 0 rem(4);
+  padding-left: rem(4);
   color: #fff;
 }
 
 .breadcrumb__item:last-child:after {
   content: '';
 }
-

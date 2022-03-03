@@ -1,0 +1,7 @@
+.contact-completed-top {
+  margin-top: rem(130);
+
+  @include mq(md){
+    margin-top:rem(197);
+  }
+}
