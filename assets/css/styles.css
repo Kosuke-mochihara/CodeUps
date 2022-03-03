@@ -778,6 +778,28 @@ select::-ms-expand {
   }
 }
 
+.contact-error__alert {
+  font-size: 16px;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
+  color: #FF5757;
+  text-align: center;
+  padding-top: 23px;
+  padding-top: 1.4375rem;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-error__alert {
+    padding-top: 3.875rem;
+  }
+}
+
+.contact-page__wrapper.contact-error__wrapper {
+  padding-top: 31px;
+  padding-top: 1.9375rem;
+}
+
 .contact__text.contact-page__text {
   padding-top: 12px;
   padding-top: 0.75rem;
@@ -2747,6 +2769,17 @@ select::-ms-expand {
 
 .breadcrumb__item:last-child:after {
   content: '';
+}
+
+.breadcrumb__contact-error {
+  margin-top: 19px;
+  margin-top: 1.1875rem;
+}
+
+@media screen and (min-width: 768px) {
+  .breadcrumb__contact-error {
+    margin-top: 0.75rem;
+  }
 }
 
 .company {

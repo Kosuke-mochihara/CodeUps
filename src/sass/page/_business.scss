@@ -144,3 +144,11 @@
 .breadcrumb__item:last-child:after {
   content: '';
 }
+
+.breadcrumb__contact-error {
+  margin-top: rem(19);
+
+  @include mq(md){
+    margin-top: rem(12);
+  }
+}
