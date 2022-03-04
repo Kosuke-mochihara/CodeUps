@@ -1,0 +1,7 @@
+.map-inner {
+  @include mq(md) {
+    max-width: rem(1100);
+    width: 100%;
+    margin: auto;
+  }
+}

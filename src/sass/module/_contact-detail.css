@@ -1,0 +1,7 @@
+.contact-detail__sub-text {
+  font-size: rem(25);
+}
+
+.contact__text.contact-detail__text {
+  padding-top: rem(14);
+}

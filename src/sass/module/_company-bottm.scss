@@ -1,0 +1,8 @@
+.page-top.company-bottm {
+  bottom: rem(41);
+
+  @include mq(md) {
+    bottom: rem(27);
+    right: rem(32);
+  }
+}

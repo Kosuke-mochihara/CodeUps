@@ -1,0 +1,32 @@
+.contact-detail__sub-text {
+  font-size: rem(25);
+
+  @include mq(md){
+    font-size: rem(30);
+    letter-spacing: rem(2);
+  }
+}
+
+.contact__text.contact-detail__text {
+  padding-top: rem(14);   
+  
+  @include mq(md){
+    padding-top: rem(34);
+    padding-left: rem(15);
+  }
+}
+
+.contact-detail__text-pc{
+  display: none;
+
+  @include mq(md){
+    display: block;
+
+  }
+}
+
+.contact-detail__text-sp{
+  @include mq(md){
+    display: none;
+  }
+}

@@ -1,0 +1,5 @@
+.breadcrumb.top-company-breadcrumb{
+  @include mq(md){
+    padding-left: 0;
+  }
+}
