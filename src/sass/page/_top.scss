@@ -13,7 +13,6 @@
 
   @include mq(md) {
     margin-top: 0;
-
   }
 }
 
@@ -523,4 +522,11 @@
     padding-bottom: rem(38);
     background-color: initial;
   }
+}
+
+.footer__business{
+  padding-left: rem(4);
+@include mq(md){
+padding-left: 0;
+}
 }

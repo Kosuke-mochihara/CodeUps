@@ -1,0 +1,8 @@
+.top-business-contact {
+  margin-top: rem(80);
+  padding-top: rem(51);
+
+  @include mq(md) {
+    padding-top: rem(20);
+  }
+}

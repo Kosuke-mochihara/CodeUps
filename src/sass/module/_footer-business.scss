@@ -1,0 +1,6 @@
+.footer-business {
+  padding-top: rem(49);
+  padding-left: rem(4);
+
+  @include mq(md) {}
+}

@@ -1,0 +1,7 @@
+.breadcrumb.business-breadcrumb {
+  padding-left: rem(20);
+
+  @include mq(md){
+    padding-left: 0;
+  }
+}

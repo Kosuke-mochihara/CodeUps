@@ -1,0 +1,8 @@
+.page-top.business-page-bottm {
+  right: rem(20);
+
+  @include mq(md) {
+    right: rem(32);
+    bottom: rem(27);
+  }
+}

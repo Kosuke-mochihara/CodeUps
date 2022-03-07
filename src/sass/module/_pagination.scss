@@ -1,13 +1,19 @@
 .pagination__header {
   border: 1px solid #fff;
   box-sizing: border-box;
-  padding-left: rem(13);
-  padding-right: rem(13);
-  margin-right: rem(24);
+  padding-left: rem(12);
+  padding-right: rem(11);
+  letter-spacing: rem(2);
 }
 
-.pagination__header:last-child {
-  margin-right: 0;
+.pagination__header--prev {
+  margin-right: rem(14);
+}
+
+.pagination__header--next {
+  padding-left: rem(12);
+  padding-right: rem(10);
+  margin-left: rem(14);
 }
 
 
@@ -17,7 +23,8 @@
   padding-left: rem(8);
   padding-right: rem(7);
   padding-bottom: rem(5);
-  margin-right: rem(16);
+  margin-left: rem(7);
+  margin-right: rem(7);
   line-height: 1.0126582278481012658;
 }
 
@@ -36,9 +43,4 @@
 .pagination__center:hover {
   color: #333;
   background-color: #fff;
-}
-
-.blog__pagination.pt0__tm0 {
-  padding-top: 0;
-  padding-bottom: 0;
 }
