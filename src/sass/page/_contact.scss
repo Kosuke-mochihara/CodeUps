@@ -97,3 +97,10 @@
 .mt-62 {
   margin-top: rem(62);
 }
+
+.breadcrumb__item--blog:after {
+  content: '>';
+  padding-left: 0;
+  padding-right: 0;
+  color: #fff;
+}

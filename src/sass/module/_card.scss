@@ -49,23 +49,24 @@
 .card__header {
   margin-top: rem(26);
   position: relative;
-  padding-top: 66.5714%;
+  padding-top: 66.571428571428571429%;
+  // padding-top: 67.48%;
 
-  @include mq(md){
+  @include mq(md) {
     margin-top: 0;
+
   }
 }
 
+.card__header--blog {
+  margin-top: rem(22);
 
-.card__header img {
-  position: absolute;
-  top: 49%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  @include mq(md) {
+    margin-top: rem(46.5);
+    padding-top: 67.5%;
+  }
 }
+
 
 .card__footer {
   color: #333;
@@ -103,7 +104,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -49%);
+  transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -145,6 +146,10 @@
   }
 }
 
+.card__title--blog-list {
+  padding-top: rem(6);
+}
+
 .card__box {
   // color: #333;
   display: flex;
@@ -161,6 +166,13 @@
     padding-left: rem(24);
     padding-right: rem(24);
     padding-bottom: rem(16);
+  }
+}
+
+.card__box--blog {
+  @include mq(md) {
+
+    padding-right: rem(19);
   }
 }
 

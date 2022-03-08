@@ -52,6 +52,14 @@
   z-index: 99;
 }
 
+.mainvisual__sub-contents--production {
+  top: 47%;
+
+  @include mq(md){
+    top: 48%;
+  }
+}
+
 .mainvisual__title {
   font-size: rem(27);
   font-weight: bold;
@@ -71,7 +79,7 @@
   }
 }
 
-.mainvisual__title--news{
+.mainvisual__title--news {
   font-size: rem(30);
 
   @include mq(md) {
@@ -89,6 +97,20 @@
     font-size: rem(36);
     letter-spacing: 0.5px;
   }
+}
+
+.mainvisual__title--production {
+  font-size: rem(30);
+
+  @include mq(md) {
+    font-size: rem(35);
+  }
+}
+
+.mainvisual__title--blog{
+@include mq(md){
+  font-size: rem(35);
+}
 }
 
 .mainvisual__subtitle {

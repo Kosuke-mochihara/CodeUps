@@ -5,8 +5,13 @@
 }
 
 
-.blog__categoey-box {
-  letter-spacing: 0.02em;
+.top-blog.blog__categoey-box {
+  letter-spacing: rem(2);
+
+  @include mq(md) {
+    margin-top: rem(114);
+    margin-left: rem(68);
+  }
 }
 
 .blog__items {
@@ -23,14 +28,37 @@
   padding-left: rem(8);
   padding-right: rem(8);
   padding-bottom: rem(3);
-  margin-right: rem(26);
   margin-bottom: rem(16);
+
+  @include mq(md) {
+    padding-left: rem(10);
+  }
 }
 
 .blog__item {
-  margin-right: rem(22);
+  margin-left: rem(23);
   margin-bottom: rem(16);
   border-bottom: 1px solid #000;
+
+  @include mq(md) {
+    margin-left: rem(41);
+  }
+}
+
+.blog__item+.blog__item {
+  margin-left: rem(23);
+
+  @include mq(md) {
+    margin-left: rem(38);
+  }
+}
+
+.blog__item:last-child {
+  margin-left: 0;
+
+  @include mq(md) {
+    margin-left: rem(38);
+  }
 }
 
 .blog__pagination {

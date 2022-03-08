@@ -42,7 +42,7 @@
   font-weight: 400;
   text-align: center;
   letter-spacing: rem(2);
-  
+
   @include mq(md) {
     text-align: center;
     font-size: rem(25);
@@ -188,6 +188,14 @@
   }
 }
 
+.breadcrumb__introduction {
+  @include mq(md) {
+    padding-left: 0;
+  }
+}
+
+
+
 .breadcrumb__item-box {
   letter-spacing: rem(1);
 
@@ -215,5 +223,15 @@
 
   @include mq(md) {
     margin-top: rem(12);
+  }
+}
+
+.breadcrumb__inner--blog {
+  padding-left: rem(20);
+  padding-right: rem(20);
+
+  @include mq(md) {
+    padding-left: rem(90);
+    padding-right: rem(90);
   }
 }

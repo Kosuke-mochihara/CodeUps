@@ -11,8 +11,10 @@ jQuery(function ($) {
       // 画面が指定pxより上ならボタンを非表示
       topBtn.fadeOut();
     }
-  }); 
-  
+  });
+
+
+
   // ドロワー
   $('.js-hamburger').on('click', function () {
     if ($('.js-hamburger').hasClass('open')) {
@@ -24,8 +26,8 @@ jQuery(function ($) {
       $('.js-overlay').fadeIn();
       $(this).addClass('open');
     }
-  }); 
-  
+  });
+
   // ボタンをクリックしたらスクロールして上に戻る
   topBtn.click(function () {
     $('body,html').animate({
@@ -33,7 +35,7 @@ jQuery(function ($) {
     }, 300, 'swing');
     return false;
   });
-  
+
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
   $(document).on('click', 'a[href*="#"]', function () {
     var time = 400;
@@ -78,4 +80,42 @@ let swipeOption = {
     clickable: true,
   }
 }
-new Swiper('.swiper-container', swipeOption);
+
+
+
+
+
+//メイン
+var slider = new Swiper ('.gallery-slider', {
+  slidesPerView: 1,
+  centeredSlides: true,
+  loop: true,
+  loopedSlides: 6, //スライドの枚数と同じ値を指定
+  navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+  },
+});
+
+//サムネイル
+var thumbs = new Swiper ('.gallery-thumbs', {
+  slidesPerView: 'auto',
+  spaceBetween: 10,
+  centeredSlides: true,
+  loop: true,
+  slideToClickedSlide: true,
+});
+
+//4系～
+//メインとサムネイルを紐づける
+slider.controller.control = thumbs;
+thumbs.controller.control = slider;
+
+
+
+
+
+
+
+new Swiper('.swiper-container--introduction', swipeOption);
+

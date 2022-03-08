@@ -1,0 +1,5 @@
+.breadcrumb.breadcrumb-production {
+  @include mq(md) {
+    padding-left: 0;
+  }
+}

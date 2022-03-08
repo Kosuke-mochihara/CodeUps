@@ -2,6 +2,12 @@
   color: #fff;
 }
 
+.production {
+  @include mq(md) {
+    margin-top: rem(23);
+  }
+}
+
 .production__img {
   padding-top: 66.4%;
   position: relative;
@@ -22,25 +28,36 @@
   color: #fff;
   top: -1px;
   right: 0;
-  padding-top: rem(8);
-  padding-left: rem(20);
+  padding-top: rem(9);
+  padding-left: rem(18);
   padding-right: rem(20);
   padding-bottom: rem(9);
   background-color: #111;
-  letter-spacing: 0.2em;
+  letter-spacing: rem(2);
 }
 
 .production__title {
   color: #fff;
   text-align: center;
   font-size: rem(20);
-  letter-spacing: 0.2em;
-  margin-top: rem(24);
-  margin-bottom: rem(48);
+  letter-spacing: rem(2);
+  margin-top: rem(28);
+  margin-bottom: rem(49);
 
-  @include mq(md){
-    margin-top: rem(12);
-    margin-bottom: rem(114);
+  @include mq(md) {
+    margin-top: rem(15);
+    margin-bottom: rem(115);
+  }
+}
+
+.production__title--adjustment {
+  margin-top: rem(25);
+  margin-bottom: rem(51);
+
+  @include mq(md) {
+    margin-top: rem(15);
+    margin-bottom: rem(115);
+
   }
 }
 
@@ -56,20 +73,93 @@
 }
 
 .production__wrapper {
+  margin-top: rem(1);
+
   @include mq(md) {
- 
-    width: calc(50% - 4.8rem * 1/2);
+    max-width: calc(50% - 48px * 1/2);
+    width: 100%;
   }
 }
 
 .production__wrapper+.production__wrapper {
   @include mq(md) {
-    margin-left: rem(48);
+    margin-left: 48px;
   }
 }
 
 .production__wrapper:nth-child(2n+1) {
-  @include mq(md){
+  @include mq(md) {
     margin-left: 0;
   }
+}
+
+.production__pagination {
+  padding-top: rem(33);
+
+
+  @include mq(md) {
+    display: flex;
+    margin-top: rem(-42);
+  }
+}
+
+
+
+
+
+.pagination__header {
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  padding-left: rem(11);
+  padding-right: rem(10);
+  letter-spacing: rem(2);
+}
+
+.pagination__header--prev {
+  margin-right: rem(14);
+
+  @include mq(md) {
+    padding-left: rem(12);
+    padding-right: rem(11);
+  }
+}
+
+.pagination__header--next {
+  padding-left: rem(11);
+  padding-right: rem(9);
+  margin-left: rem(14);
+
+  @include mq(md) {
+    padding-left: rem(12);
+    padding-right: rem(10);
+  }
+}
+
+
+.pagination__center-production {
+  border: 1px solid #fff;
+  padding-top: rem(3);
+  padding-left: rem(8);
+  padding-right: rem(7);
+  padding-bottom: rem(5);
+  margin-left: rem(7);
+  margin-right: rem(7);
+  line-height: 1.01266;
+}
+
+.pagination__footer {
+  border: 1px solid #fff;
+  padding-left: rem(13);
+  padding-right: rem(13);
+  letter-spacing: 0.2em;
+}
+
+.pagination__header:hover {
+  color: #333;
+  background-color: #fff;
+}
+
+.pagination__center:hover {
+  color: #333;
+  background-color: #fff;
 }

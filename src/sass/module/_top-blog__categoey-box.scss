@@ -1,0 +1,7 @@
+.top-blog__categoey-box{
+  margin-top: rem(84);
+
+  @include mq(md){
+    margin-top: rem(114);
+  }
+}
