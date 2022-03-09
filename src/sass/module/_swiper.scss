@@ -9,6 +9,17 @@
   /* 背景画像としてのサイズ（＝表示したい画像サイズ） */
   margin-top: rem(-17);
   /* 縦中央配置用：ボタンの高さの半分のネガティブマージン（top:50%がすでに設定されている） */
+
+  @include mq(md){
+    width: rem(50);
+    /* ボタンの幅 */
+    height: rem(50);
+    /* ボタンの高さ */
+    background-size: 50px 50px;
+    /* 背景画像としてのサイズ（＝表示したい画像サイズ） */
+    margin-top: rem(-26);
+    /* 縦中央配置用：ボタンの高さの半分のネガティブマージン（top:50%がすでに設定されている） */
+  }
 }
 
 /* 次ページボタンのスタイル */
@@ -20,4 +31,19 @@
 /* 前ページボタンのスタイル */
 .swiper-button-prev {
   background-image: url(/src/images/common/swiper/btn-left.png);
+}
+
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev{
+  right: 8px;
+  @include mq(md){
+    right: 6px;
+  }
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next{
+  left: 8px;
+  @include mq(md){
+    left: 6px;
+  }
 }

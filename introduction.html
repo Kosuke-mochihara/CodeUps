@@ -128,13 +128,17 @@
 
       <div class="introduction">
         <div class="introduction__contents">
-          <h2 class="introduction__title">〇〇株式会社　制作実績</h2>
+          <h2 class="introduction__title">
+            <p class="introduction__title-switch is-sp">〇〇株式会社　制作実績</p>
+            <p class="introduction__title-switch is-pc">〇〇株式会社様 制作実績</p>
+
+          </h2>
           <div class="introduction__box">
             <time datetime="2021-06-13" class="introduction__date">2020/06/13</time>
             <p class="introduction__category">カテゴリ１</p>
           </div>
           <div class="introduction__gallery">
-            <div class="gallery">
+            <div class="gallery is-sp">
               <div class="swiper-container gallery-slider">
                 <!-- メイン -->
                 <div class="swiper-wrapper">
@@ -159,156 +163,228 @@
                     <img src="/src/images/common/swiper/blogdetail-detail__slider-sp1.jpg" alt="">
                   </div>
                   <div class="swiper-slide">
-                    <img src="/src/images/common/swiper/blogdetail-detail__slider-sp2.jpg" alt="">
-                  </div>
-                  <div class="swiper-slide">
                     <img src="/src/images/common/swiper/blogdetail-detail__slider-sp3.jpg" alt="">
                   </div>
+                  <div class="swiper-slide">
+                    <img src="/src/images/common/swiper/blogdetail-detail__slider-sp2.jpg" alt="">
+                  </div>
                 </div>
               </div>
             </div>
 
+            <!-- パソコン -->
+            <div class="gallery gallery-pc is-pc">
+              <div class="swiper-container gallery-slider-pc">
+                <!-- メイン -->
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="/assets/images/common/swiper/Rectangle1.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/assets/images/common/swiper/Rectangle2.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/assets/images/common/swiper/Rectangle3.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/assets/images/common/swiper/Rectangle4.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/assets/images/common/swiper/Rectangle5.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/assets/images/common/swiper/Rectangle6.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/assets/images/common/swiper/Rectangle7.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/assets/images/common/swiper/Rectangle8.jpg" alt="">
+                  </div>
 
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+              <!-- サムネイル -->
 
-            <div class="introduction__inner">
-
-
-              <div class="introduction-detail__wrapper">
-                <div class="introduction-detail__top">
-                  <div class="introduction-detail__header">制作のポイント</div>
-                  <div class="introduction-detail__box">
-                    <p class="introduction-detail__text">
-                      テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                    </p>
+              <div class="swiper-container gallery-thumbs-pc">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="/assets/images/common/swiper/Rectangle-pc.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/assets/images/common/swiper/blogdetail-detail__slider-pc2.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/assets/images/common/swiper/blogdetail-detail__slider-pc3.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/assets/images/common/swiper/blogdetail-detail__slider-pc4.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/assets/images/common/swiper/blogdetail-detail__slider-pc5.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/assets/images/common/swiper/blogdetail-detail__slider-pc6.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/assets/images/common/swiper/blogdetail-detail__slider-pc7.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/assets/images/common/swiper/blogdetail-detail__slider-pc8.jpg" alt="">
                   </div>
                 </div>
-                <div class="introduction-detail__top">
-                  <div class="introduction-detail__header">デザインのポイント</div>
-                  <div class="introduction-detail__box">
-                    <p class="introduction-detail__text">
-                      テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                    </p>
-                  </div>
-                </div>
-                <div class="introduction-detail__top">
-                  <div class="introduction-detail__header">その他</div>
-                  <div class="introduction-detail__box">
-                    <p class="introduction-detail__text">
-                      テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                    </p>
-                  </div>
-                </div>
+              </div>
+            </div>
+          </div>
 
-                <div class="blog-detail__pagination">
-                  <ul class="blog-detail__pagination-items">
-                    <li class="blog-detail__item blog-detail__item--prev"> <a href="#">PREV </a></li>
-                    <li class="blog-detail__item blog-detail__item--list"> <a href="#">一覧 </a></li>
-                    <li class="blog-detail__item blog-detail__item--next"> <a href="#">NEXT </a></li>
-                  </ul>
-                </div>
+          <div class="l-inner l-inner--introduction">
 
+
+            <div class="introduction__wrapper">
+              <div class="introduction-detail__top">
+                <div class="introduction-detail__header">制作のポイント</div>
+                <div class="introduction-detail__box">
+                  <p class="introduction-detail__text">
+                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                  </p>
+                </div>
+              </div>
+              <div class="introduction-detail__top">
+                <div class="introduction-detail__header">デザインのポイント</div>
+                <div class="introduction-detail__box introduction-detail__box--point">
+                  <p class="introduction-detail__text">
+                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                  </p>
+                </div>
+              </div>
+              <div class="introduction-detail__top">
+                <div class="introduction-detail__header">その他</div>
+                <div class="introduction-detail__box
+                introduction-detail__box--other">
+                  <p class="introduction-detail__text">
+                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                  </p>
+                </div>
+              </div>
+
+              <div class="blog-detail__pagination introduction-detail__pagination">
+                <ul class="blog-detail__pagination-items">
+                  <li class="blog-detail__item blog-detail__item--prev"> <a href="#">PREV </a></li>
+                  <li class="blog-detail__item blog-detail__item--list"> <a href="#">一覧 </a></li>
+                  <li class="blog-detail__item blog-detail__item--next"> <a href="#">NEXT </a></li>
+                </ul>
               </div>
 
             </div>
-          </div>
-        </div>
-
-        <div class="l-inner">
-          <div class="blog-detail-btn is-sp">
-            <a class="btn btn-article-sp" href="#">おすすめ記事</a>
-          </div>
-          <div class="blogdetail-btn is-pc">
-            <a class="btn btn-article" href="#">関連記事</a>
-          </div>
-
-          <div class="introduction__page">
-            <div class="blog-page__wrapper">
-              <a href="#" class="blog-page__wrapper">
-                <div class="blog-page__header">
-                  <img src="/assets/images/common/blog/blog6-sp.jpg" alt="ノートパソコンの写真">
-                </div>
-                <div class="blog-page__bottom">
-                  <p class="blog-page__title">タイトルが入ります。タイトルが入ります。</p>
-                  <p class="blog-page__text is-sp">説明文が入ります。説明文が入ります。説明文が入ります。</p>
-                  <div class="blog-page__box">
-                    <p class="blog-page__category">カテゴリ</p>
-                    <time datetime="2021-07-20" class="blog-page__date">2021.07.20</time>
-                  </div>
-                </div>
-              </a>
-              <a href="#" class="blog-page__wrapper">
-                <div class="blog-page__header">
-                  <img src="/assets/images/common/blog/blog6-sp.jpg" alt="ノートパソコンの写真">
-                </div>
-                <div class="blog-page__bottom">
-                  <p class="blog-page__title">タイトルが入ります。タイトルが入ります。</p>
-                  <p class="blog-page__text is-sp">説明文が入ります。説明文が入ります。説明文が入ります。</p>
-                  <div class="blog-page__box">
-                    <p class="blog-page__category">カテゴリ</p>
-                    <time datetime="2021-07-20" class="blog-page__date">2021.07.20</time>
-                  </div>
-                </div>
-              </a>
-              <a href="#" class="blog-page__wrapper">
-                <div class="blog-page__header">
-                  <img src="/assets/images/common/blog/blog6-sp.jpg" alt="ノートパソコンの写真">
-                </div>
-                <div class="blog-page__bottom">
-                  <p class="blog-page__title">タイトルが入ります。タイトルが入ります。</p>
-                  <p class="blog-page__text is-sp">説明文が入ります。説明文が入ります。説明文が入ります。</p>
-                  <div class="blog-page__box">
-                    <p class="blog-page__category">カテゴリ</p>
-                    <time datetime="2021-07-20" class="blog-page__date">2021.07.20</time>
-                  </div>
-                </div>
-              </a>
-              <a href="#" class="blog-page__wrapper">
-                <div class="blog-page__header">
-                  <img src="/assets/images/common/blog/blog6-sp.jpg" alt="ノートパソコンの写真">
-                </div>
-                <div class="blog-page__bottom">
-                  <p class="blog-page__title">タイトルが入ります。タイトルが入ります。</p>
-                  <p class="blog-page__text is-sp">説明文が入ります。説明文が入ります。説明文が入ります。</p>
-                  <div class="blog-page__box">
-                    <p class="blog-page__category">カテゴリ</p>
-                    <time datetime="2021-07-20" class="blog-page__date">2021.07.20</time>
-                  </div>
-                </div>
-              </a>
-
-            </div>
-
 
 
 
           </div>
         </div>
-
-
-
-        <section class="contact top-detail-contact contact-detail">
-          <div class="inner">
-            <div class="title-box contact-box contact-detail__box">
-              <h2 class="contact-box__title contact-box__title--left">Contact</h2>
-              <span class="contact-box__sub-title contact-detail__sub-text">お問い合わせ</span>
-            </div>
-            <p class="contact__text contact-detail__text contact-detail__text-pc">
-              テキストが入ります。テキストが入ります。テキストが入ります。
-            </p>
-            <p class="contact__text contact-detail__text contact-detail__text-sp">
-              テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-            </p>
-            <div class="contact__top-btn blog-detail__top-btn blog-detail__top-btn-pc">
-              <a class="contact-btn blog-detail__btn" href="#">詳しく見る</a>
-            </div>
-            <div class="contact__top-btn blog-detail__top-btn blog-detail__top-btn-sp">
-              <a class="contact-btn blog-detail__btn" href="#">お問い合わせへ</a>
-            </div>
-          </div>
-        </section>
       </div>
+      <div class="introduction__footer">
+        <div class="blog-detail-btn is-sp">
+          <a class="btn btn-article-sp" href="#">おすすめ記事</a>
+        </div>
+        <div class="blog-detail-btn is-pc">
+          <a class="btn btn-article-pc" href="#">関連記事</a>
+        </div>
+
+        <div class="introduction__page">
+          <div class="introduction__page-box">
+            <a href="#" class="blog-page__wrapper blog-page__box-wrapper">
+              <div class="blog-page__header">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="/assets/images/common/production-detail/production-detail-pc1.jpg">
+                  <img alt="メインビジュアル画像1" src="/assets/images/common/production-detail/Rectangle-sp1.jpg">
+                </picture>
+              </div>
+              <div class="blog-page__bottom">
+                <p class="blog-page__title">タイトルが入ります。タイトルが入ります。</p>
+                <p class="blog-page__text is-sp">説明文が入ります。説明文が入ります。説明文が入ります。</p>
+                <div class="blog-page__box">
+                  <p class="blog-page__category">カテゴリ</p>
+                  <time datetime="2021-07-20" class="blog-page__date">2021.07.20</time>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="blog-page__wrapper blog-page__box-wrapper">
+              <div class="blog-page__header">
+                  <picture>
+                  <source media="(min-width: 768px)" srcset="/assets/images/common/production-detail/production-detail-pc2.jpg">
+                  <img alt="メインビジュアル画像1" src="/assets/images/common/production-detail/Rectangle-sp2.jpg">
+                </picture>
+              </div>
+              <div class="blog-page__bottom">
+                <p class="blog-page__title">タイトルが入ります。タイトルが入ります。</p>
+                <p class="blog-page__text is-sp">説明文が入ります。説明文が入ります。説明文が入ります。</p>
+                <div class="blog-page__box">
+                  <p class="blog-page__category">カテゴリ</p>
+                  <time datetime="2021-07-20" class="blog-page__date">2021.07.20</time>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="blog-page__wrapper blog-page__box-wrapper">
+              <div class="blog-page__header">
+                  <picture>
+                  <source media="(min-width: 768px)" srcset="/assets/images/common/production-detail/production-detail-pc3.jpg">
+                  <img alt="メインビジュアル画像1" src="/assets/images/common/production-detail/Rectangle-sp3.jpg">
+                </picture>
+              </div>
+              <div class="blog-page__bottom">
+                <p class="blog-page__title">タイトルが入ります。タイトルが入ります。</p>
+                <p class="blog-page__text is-sp">説明文が入ります。説明文が入ります。説明文が入ります。</p>
+                <div class="blog-page__box">
+                  <p class="blog-page__category">カテゴリ</p>
+                  <time datetime="2021-07-20" class="blog-page__date">2021.07.20</time>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="blog-page__wrapper blog-page__box-wrapper">
+              <div class="blog-page__header">
+                  <picture>
+                  <source media="(min-width: 768px)" srcset="/assets/images/common/production-detail/production-detail-pc4.jpg">
+                  <img alt="メインビジュアル画像1" src="/assets/images/common/production-detail/Rectangle-sp4.jpg">
+                </picture>
+              </div>
+              <div class="blog-page__bottom">
+                <p class="blog-page__title">タイトルが入ります。タイトルが入ります。</p>
+                <p class="blog-page__text is-sp">説明文が入ります。説明文が入ります。説明文が入ります。</p>
+                <div class="blog-page__box">
+                  <p class="blog-page__category">カテゴリ</p>
+                  <time datetime="2021-07-20" class="blog-page__date">2021.07.20</time>
+                </div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+      <section class="contact top-introduction-contact top-pagination-contact contact-detail">
+        <div class="inner">
+          <div class="title-box contact-box contact-detail__box">
+            <h2 class="contact-box__title contact-box__title--left">Contact</h2>
+            <span class="contact-box__sub-title contact-detail__sub-text">お問い合わせ</span>
+          </div>
+          <p class="contact__text contact-detail__text contact-detail__text-pc">
+            テキストが入ります。テキストが入ります。テキストが入ります。
+          </p>
+          <p class="contact__text contact-detail__text contact-detail__text-sp">
+            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+          </p>
+          <div class="contact__top-btn blog-detail__top-btn blog-detail__top-btn-pc business-btn">
+            <a class="contact-btn blog-detail__btn" href="#">詳しく見る</a>
+          </div>
+          <div class="contact__top-btn blog-detail__top-btn blog-detail__top-btn-sp">
+            <a class="contact-btn blog-detail__btn" href="#">お問い合わせへ</a>
+          </div>
+        </div>
+      </section>
     </div>
   </main>
+
 
   <footer class="footer footer__contact-finish">
     <div class="footer__contents--pc">
@@ -347,13 +423,10 @@
 
   <div class="floating">
     <a href="">
-      <div class="page-top introduction-page-bottm"></div>
+      <div class="page-top business-page-bottm"></div>
     </a>
   </div>
   <!-- フローティング -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="/src/js/script.js"></script>
 </body>

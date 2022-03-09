@@ -1,4 +1,12 @@
-.introduction {}
+.introduction {
+  @include mq(md) {
+    margin-top: rem(88);
+    padding-left: rem(239);
+    padding-right: rem(240);
+  }
+
+
+}
 
 .introduction__inner {
   padding-left: rem(20);
@@ -15,10 +23,8 @@
   text-align: left;
 }
 
-.introduction__contents{
-  @include mq(md){
-    
-  }
+.introduction__contents {
+  @include mq(md) {}
 }
 
 .introduction__title {
@@ -27,6 +33,12 @@
   line-height: 1.75;
   padding-left: rem(20);
   padding-right: rem(20);
+
+  @include mq(md) {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: rem(23);
+  }
 }
 
 .introduction__box {
@@ -37,13 +49,21 @@
   align-items: center;
 
   @include mq(md) {
-    padding-top: rem(32);
+    padding-top: rem(29);
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 .introduction__date {
   letter-spacing: rem(0.4);
   padding-right: rem(30);
+}
+
+.introduction__wrapper {
+  @include mq(md) {
+    padding-top: rem(48);
+  }
 }
 
 .introduction__category {
@@ -54,10 +74,22 @@
   line-height: 1;
   border: 1px solid #fff;
   letter-spacing: rem(2);
+
+  @include mq(md) {
+    padding-top: rem(10);
+    padding-left: rem(20);
+    padding-right: rem(17);
+    padding-bottom: rem(12);
+    margin-left: rem(1);
+  }
 }
 
 .introduction__gallery {
   margin-top: rem(-21);
+
+  @include mq(md) {
+    margin-top: rem(33);
+  }
 }
 
 
@@ -74,6 +106,19 @@
   border: 1px solid #fff;
 }
 
+.introduction-detail__box--point {
+  @include mq(md) {
+    margin-top: rem(70);
+  }
+}
+
+.introduction-detail__box--other {
+  @include mq(md) {
+    margin-top: rem(69);
+  }
+}
+
+
 .introduction-detail__header {
   font-size: rem(20);
   background-color: #000;
@@ -88,6 +133,10 @@
   padding-right: rem(22);
   padding-bottom: rem(7);
   letter-spacing: rem(0.4);
+
+  @include mq(md) {
+    left: rem(40);
+  }
 }
 
 .introduction-detail__text {
@@ -100,6 +149,17 @@
 
   @include mq(md) {
     text-align: left;
+    padding-top: rem(12);
+    padding-left: rem(23);
+    padding-right: rem(22);
+  }
+}
+
+.blog-detail__pagination.introduction-detail__pagination {
+  margin-top: rem(81);
+
+  @include mq(md) {
+    margin-top: rem(101);
   }
 }
 
@@ -114,3 +174,20 @@
   }
 }
 
+.introduction__footer {
+  padding-left: rem(20);
+  padding-right: rem(20);
+
+  @include mq(md) {
+    padding-top: rem(2);
+    padding-left: rem(90);
+    padding-right: rem(90);
+  }
+}
+
+
+.introduction__page-box {
+  @include mq(md) {
+    display: flex;
+  }
+}

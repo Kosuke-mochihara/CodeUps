@@ -1,5 +1,5 @@
 .blog-page__content {
-  @include mq(md) {}
+
 }
 
 .blog-page__wrapper:last-child {
@@ -20,7 +20,6 @@
 
 .blog-page__wrapper {
   display: block;
-
 
   @include mq(md) {
     margin-right: rem(32);

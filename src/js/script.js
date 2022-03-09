@@ -90,7 +90,7 @@ var slider = new Swiper ('.gallery-slider', {
   slidesPerView: 1,
   centeredSlides: true,
   loop: true,
-  loopedSlides: 6, //スライドの枚数と同じ値を指定
+  loopedSlides: 8, //スライドの枚数と同じ値を指定
   navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -100,7 +100,35 @@ var slider = new Swiper ('.gallery-slider', {
 //サムネイル
 var thumbs = new Swiper ('.gallery-thumbs', {
   slidesPerView: 'auto',
-  spaceBetween: 10,
+  spaceBetween: 24,
+  centeredSlides: true,
+  loop: true,
+  slideToClickedSlide: true,
+});
+
+//4系～
+//メインとサムネイルを紐づける
+slider.controller.control = thumbs;
+thumbs.controller.control = slider;
+
+
+
+//メイン PC
+var slider = new Swiper ('.gallery-slider-pc', {
+  slidesPerView: 1,
+  centeredSlides: true,
+  loop: true,
+  loopedSlides: 8, //スライドの枚数と同じ値を指定
+  navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+  },
+});
+
+//サムネイル
+var thumbs = new Swiper ('.gallery-thumbs-pc', {
+  slidesPerView: 'auto'+ 0.5 ,
+  spaceBetween: 8,
   centeredSlides: true,
   loop: true,
   slideToClickedSlide: true,
@@ -114,8 +142,6 @@ thumbs.controller.control = slider;
 
 
 
-
-
-
 new Swiper('.swiper-container--introduction', swipeOption);
+
 

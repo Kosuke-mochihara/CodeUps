@@ -1,31 +1,31 @@
 // indexページ
 
 
-.swiper-pagination-bullet {
-    background-color: #C4C4C4;
-    opacity: 1;
+.swiper-pagination-bullet { 
+  background-color: #C4C4C4;
+  opacity: 1;
 }
 
 .swiper-pagination-bullet-active {
-    background-color: #F9F871;
+  background-color: #F9F871;
 }
 
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 5.5px);
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 5.5px);
 }
 
 .swiper-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-    left: -2px;
-    bottom: 3px;
+  left: -2px;
+  bottom: 3px;
 
-    @include mq(md) {
-        left: -21px;
-        bottom: 8px;
-    }
+  @include mq(md) {
+    left: -21px;
+    bottom: 8px;
+  }
 }
 
 
@@ -33,61 +33,96 @@
 //ギャラリー
 
 .gallery {
+  width: 100%;
+
+  @include mq(md) {
     width: 100%;
     max-width: rem(600);
     margin: rem(40) auto;
+  }
+
+}
+
+.gallery-pc {
+  width: 100%;
+  max-width: rem(799);
+  margin: auto;
 }
 
 .gallery-slider {
-    width: 100%;
-    height: auto;
-    margin-bottom: rem(31);
+  width: 100%;
+  height: auto;
+  margin-bottom: rem(31);
 }
 
 .gallery-slider .swiper-slide {
-    width: auto;
-    height: rem(251);
+  width: auto;
+  height: rem(251);
+
 
 }
 
 .gallery-slider .swiper-slide img {
-    display: block;
-    width: auto;
-    height: 100%;
-    margin: 0 auto;
-}
-
-.gallery-thumbs {
-    width: 100%;
-    padding: 0;
-    overflow: hidden;
-}
-
-.gallery-thumbs .swiper-slide {
-    width: rem(163);
-    height: rem(163);
-    text-align: center;
-    overflow: hidden;
-}
-
-.gallery-thumbs .swiper-slide-active {
-    opacity: 1;
+  display: block;
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
 }
 
 .gallery-thumbs .swiper-slide img {
-    width: auto;
-    height: 100%;
+  object-fit: cover;
+}
+
+
+.gallery-thumbs .swiper-slide {
+  width: rem(163);
+  height: rem(163);
+  text-align: center;
+  overflow: hidden;
+}
+
+// パソコン
+.gallery-thumbs-pc {
+  width: 100%;
+  padding-top: rem(40);
+  overflow: hidden;
+
+}
+
+.gallery-thumbs-pc .swiper-slide {
+  width: rem(99);
+  height: rem(99);
+  text-align: center;
+  overflow: hidden;
+
+  @include mq(md) {
+    width: rem(93);
+    height: rem(93);
+  }
+}
+
+.gallery-thumbs-pc .swiper-slide-active {
+  opacity: 1;
+}
+
+.gallery-thumbs-pc .swiper-slide img {
+  width: auto;
+  height: 100%;
+
+  @include mq(md){
+    object-fit: cover;
+  }
 }
 
 // メインビジュアル
 @keyframes zoomUp {
-    0% {
-        transform: scale(1.15);
-    }
+  0% {
+    transform: scale(1.15);
+  }
 
-    100% {
-        transform: scale(1.30);
-    }
+  100% {
+    transform: scale(1.30);
+  }
 }
 
 
@@ -95,9 +130,10 @@
 .swiper-slide-active .slide-img,
 .swiper-slide-duplicate-active .slide-img,
 .swiper-slide-prev .slide-img {
-    animation: zoomUp 10s linear 0s 1 normal both;
+  animation: zoomUp 10s linear 0s 1 normal both;
 }
 
 .slide-img img {
-    display: block;
+  display: block;
 }
+
