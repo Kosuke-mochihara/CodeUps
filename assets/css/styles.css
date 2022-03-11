@@ -359,6 +359,8 @@ select::-ms-expand {
   font-size: 1rem;
   margin-top: 16px;
   margin-top: 1rem;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
 }
 
 .blog__item-reverse {
@@ -780,7 +782,7 @@ select::-ms-expand {
 
 @media screen and (min-width: 768px) {
   .contact-box__title--left {
-    ext-align: left;
+    text-align: left;
     padding-left: 5.5rem;
   }
 }
@@ -876,8 +878,8 @@ select::-ms-expand {
 }
 
 .contact-completed-bottom {
-  bottom: 47px !important;
-  bottom: 2.9375rem !important;
+  bottom: 47px;
+  bottom: 2.9375rem;
 }
 
 .contact-completed {
@@ -1006,8 +1008,8 @@ select::-ms-expand {
 }
 
 .contact-page__wrapper.contact-error__wrapper {
-  padding-top: 31px;
-  padding-top: 1.9375rem;
+  padding-top: 38px;
+  padding-top: 2.375rem;
 }
 
 .contact__text.contact-page__text {
@@ -2297,6 +2299,10 @@ select::-ms-expand {
   padding-left: 1.25rem;
   padding-right: 20px;
   padding-right: 1.25rem;
+  max-width: 1280px;
+  max-width: 80rem;
+  width: 100%;
+  margin: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -2364,21 +2370,9 @@ select::-ms-expand {
   }
 }
 
-.mainvisual {
-  position: relative;
-}
-
-.mainvisual__img {
-  position: relative;
-}
-
-.mainvisual__top {
-  position: relative;
-}
-
 .mainvisual__img::after {
   position: absolute;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-color: #111;
   opacity: 0.2;
@@ -3189,24 +3183,36 @@ select::-ms-expand {
   background-image: url(/src/images/common/swiper/btn-left.png);
 }
 
-.swiper-button-next, .swiper-rtl .swiper-button-prev {
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
   right: 8px;
 }
 
 @media screen and (min-width: 768px) {
-  .swiper-button-next, .swiper-rtl .swiper-button-prev {
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev {
     right: 6px;
   }
 }
 
-.swiper-button-prev, .swiper-rtl .swiper-button-next {
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
   left: 8px;
 }
 
 @media screen and (min-width: 768px) {
-  .swiper-button-prev, .swiper-rtl .swiper-button-next {
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
     left: 6px;
   }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: transparent;
+  background-color: initial;
+  color: #000;
+  color: initial;
 }
 
 .appp {
@@ -4106,6 +4112,16 @@ select::-ms-expand {
   }
 }
 
+.blog-page__bottom {
+  color: #333;
+  background-color: #fff;
+}
+
+.blog-page__bottom:hover {
+  color: #fff;
+  background-color: #333;
+}
+
 .blog-page__detail {
   margin-top: 32px;
   margin-top: 2rem;
@@ -4208,7 +4224,6 @@ select::-ms-expand {
 }
 
 .blog-page__box {
-  color: #333;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4218,7 +4233,6 @@ select::-ms-expand {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #fff;
   padding-top: 8px;
   padding-top: 0.5rem;
   padding-left: 23px;
@@ -4254,7 +4268,6 @@ select::-ms-expand {
 }
 
 .blog-page__date {
-  color: #333;
   font-size: 14px;
   font-size: 0.875rem;
   letter-spacing: 1px;
@@ -4492,7 +4505,8 @@ select::-ms-expand {
 }
 
 @media screen and (min-width: 768px) {
-  .breadcrumb__introduction {
+  .breadcrumb__introduction,
+  .breadcrumb__contact-page {
     padding-left: 0;
   }
 }
@@ -4516,13 +4530,28 @@ select::-ms-expand {
   color: #fff;
 }
 
+.breadcrumb__item--contact-error:after {
+  content: '>';
+  padding-left: 0;
+  padding-right: 0;
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .breadcrumb__item--contact-error:after {
+    padding-left: 0.0625rem;
+    padding-right: 0.0625rem;
+  }
+}
+
 .breadcrumb__item:last-child:after {
   content: '';
 }
 
 .breadcrumb__contact-error {
-  margin-top: 19px;
-  margin-top: 1.1875rem;
+  margin-top: 12px;
+  margin-top: 0.75rem;
+  padding-left: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -4543,6 +4572,13 @@ select::-ms-expand {
     padding-left: 5.625rem;
     padding-right: 5.625rem;
   }
+}
+
+.blog-width {
+  max-width: 1280px;
+  max-width: 80rem;
+  width: 100%;
+  margin: auto;
 }
 
 .company {
@@ -5367,6 +5403,9 @@ select::-ms-expand {
 
 @media screen and (min-width: 768px) {
   .production {
+    max-width: 80rem;
+    width: 100%;
+    margin: auto;
     padding-left: 5.625rem;
     padding-right: 5.75rem;
     display: -webkit-box;

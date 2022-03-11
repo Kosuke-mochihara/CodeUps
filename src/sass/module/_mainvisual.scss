@@ -1,24 +1,34 @@
-.mainvisual {
-  position: relative;
-}
+// .mainvisual {
+//   position: relative;
+// }
+// .mainvisual__top {
+//   position: relative;
+// }
+// .mainvisual-top {
+//   position: relative;
+//   height: 100vh;
+//   width: 100%;
+// }
 
-.mainvisual__img {
-  position: relative;
-}
 
-.mainvisual__top {
-  position: relative;
-}
+// .mainvisual__img {
+//   position: relative;
+//   height: 100%;
+//   width: 100%;
+// }
+
+
 
 .mainvisual__img::after {
   position: absolute;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-color: #111;
   opacity: 0.2;
   top: 0;
   left: 0;
 }
+
 
 
 .mainvisual__contents {
@@ -55,7 +65,7 @@
 .mainvisual__sub-contents--production {
   top: 47%;
 
-  @include mq(md){
+  @include mq(md) {
     top: 48%;
   }
 }
@@ -107,10 +117,10 @@
   }
 }
 
-.mainvisual__title--blog{
-@include mq(md){
-  font-size: rem(35);
-}
+.mainvisual__title--blog {
+  @include mq(md) {
+    font-size: rem(35);
+  }
 }
 
 .mainvisual__subtitle {

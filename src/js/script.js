@@ -1,3 +1,5 @@
+"use strict";
+
 jQuery(function ($) {
   // この中であればWordpressでも「$」が使用可能になる
   var topBtn = $('.pagetop');
@@ -11,11 +13,8 @@ jQuery(function ($) {
       // 画面が指定pxより上ならボタンを非表示
       topBtn.fadeOut();
     }
-  });
+  }); // ドロワー
 
-
-
-  // ドロワー
   $('.js-hamburger').on('click', function () {
     if ($('.js-hamburger').hasClass('open')) {
       $('.js-drawer-menu').fadeOut();
@@ -26,17 +25,15 @@ jQuery(function ($) {
       $('.js-overlay').fadeIn();
       $(this).addClass('open');
     }
-  });
+  }); // ボタンをクリックしたらスクロールして上に戻る
 
-  // ボタンをクリックしたらスクロールして上に戻る
   topBtn.click(function () {
     $('body,html').animate({
       scrollTop: 0
     }, 300, 'swing');
     return false;
-  });
+  }); // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
 
-  // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
   $(document).on('click', 'a[href*="#"]', function () {
     var time = 400;
     var header = $('header').innerHeight();
@@ -48,10 +45,8 @@ jQuery(function ($) {
     }, time, 'swing');
     return false;
   });
-});
+}); // フローティング
 
-
-// フローティング
 jQuery(window).on("scroll", function ($) {
   if (jQuery(this).scrollTop() > 100) {
     jQuery('.floating').show();
@@ -66,82 +61,66 @@ jQuery('.floating').click(function () {
   return false;
 });
 
-
-let swipeOption = {
+var swipeOption = {
   loop: true,
   effect: 'fade',
   autoplay: {
     delay: 4000,
-    disableOnInteraction: false,
+    disableOnInteraction: false
   },
   speed: 2000,
   pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
+    el: '.swiper-pagination1',
+    clickable: true
   }
-}
+};
+new Swiper('.swiper-container', swipeOption); //メイン
 
-
-
-
-
-//メイン
-var slider = new Swiper ('.gallery-slider', {
+var slider = new Swiper('.gallery-slider', {
   slidesPerView: 1,
   centeredSlides: true,
   loop: true,
-  loopedSlides: 8, //スライドの枚数と同じ値を指定
+  loopedSlides: 8,
+  //スライドの枚数と同じ値を指定
   navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-  },
-});
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  }
+}); //サムネイル
 
-//サムネイル
-var thumbs = new Swiper ('.gallery-thumbs', {
+var thumbs = new Swiper('.gallery-thumbs', {
   slidesPerView: 'auto',
   spaceBetween: 24,
   centeredSlides: true,
   loop: true,
-  slideToClickedSlide: true,
-});
-
-//4系～
+  slideToClickedSlide: true
+}); //4系～
 //メインとサムネイルを紐づける
+
 slider.controller.control = thumbs;
-thumbs.controller.control = slider;
+thumbs.controller.control = slider; //メイン PC
 
-
-
-//メイン PC
-var slider = new Swiper ('.gallery-slider-pc', {
+var slider = new Swiper('.gallery-slider-pc', {
   slidesPerView: 1,
   centeredSlides: true,
   loop: true,
-  loopedSlides: 8, //スライドの枚数と同じ値を指定
+  loopedSlides: 8,
+  //スライドの枚数と同じ値を指定
   navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-  },
-});
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  }
+}); //サムネイル
 
-//サムネイル
-var thumbs = new Swiper ('.gallery-thumbs-pc', {
-  slidesPerView: 'auto'+ 0.5 ,
+var thumbs = new Swiper('.gallery-thumbs-pc', {
+  slidesPerView: '8',
   spaceBetween: 8,
   centeredSlides: true,
   loop: true,
-  slideToClickedSlide: true,
-});
-
-//4系～
+  slideToClickedSlide: true
+}); //4系～
 //メインとサムネイルを紐づける
+
 slider.controller.control = thumbs;
-thumbs.controller.control = slider;
-
-
-
-
-new Swiper('.swiper-container--introduction', swipeOption);
-
-
+thumbs.controller.control = slider; 
+new Swiper('.swiper-container', swipeOption);

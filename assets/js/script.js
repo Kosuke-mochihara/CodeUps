@@ -69,10 +69,11 @@ var swipeOption = {
   },
   speed: 2000,
   pagination: {
-    el: '.swiper-pagination',
+    el: '.swiper-pagination1',
     clickable: true
   }
-}; //メイン
+};
+new Swiper('.swiper-container', swipeOption); //メイン
 
 var slider = new Swiper('.gallery-slider', {
   slidesPerView: 1,
@@ -111,7 +112,7 @@ var slider = new Swiper('.gallery-slider-pc', {
 }); //サムネイル
 
 var thumbs = new Swiper('.gallery-thumbs-pc', {
-  slidesPerView: 'auto' + 0.5,
+  slidesPerView: '8',
   spaceBetween: 8,
   centeredSlides: true,
   loop: true,
@@ -121,4 +122,4 @@ var thumbs = new Swiper('.gallery-thumbs-pc', {
 
 slider.controller.control = thumbs;
 thumbs.controller.control = slider;
-new Swiper('.swiper-container--introduction', swipeOption);
+new Swiper('.swiper-container', swipeOption);

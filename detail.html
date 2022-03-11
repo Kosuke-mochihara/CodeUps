@@ -6,18 +6,18 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
   <!-- meta情報 -->
-  <title>ブログ詳細</title>
-  <meta name="description" content="ここにでぃすくりぷしょん入ります。ここにでぃすくりぷしょん入ります。ここにでぃすくりぷしょん入ります。" />
-  <meta name="keywords" content="CodeUps" />
+  <title>CodeUps</title>
+  <meta name="description" content="ここにディスクリプション入ります。ここにディスクリプション入ります。ここにディスクリプション入ります。ここにディスクリプション入ります。" />
+  <meta name="keywords" content="CodeUpsのキーワードはここです" />
   <!-- ogp -->
   <meta property="og:title" content="CodeUps" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://codeups.jacky-webworks.com/" />
   <meta property="og:image" content="/assets/images/common/top/top-pc1.jpg" />
   <meta property="og:site_name" content="CodeUps" />
-  <meta property="og:description" content="ここにでぃすくりぷしょん入ります。ここにでぃすくりぷしょん入ります。ここにでぃすくりぷしょん入ります。" />
-  <meta name=”robots” content=”noindex”>
-  <link rel=”canonical” href=”https://codeups.jacky-webworks.com/”>
+  <meta property="og:description" content="ここにディスクリプション入ります。ここにディスクリプション入ります。ここにディスクリプション入ります。ここにディスクリプション入ります。" />
+  <meta name="robots" content="noindex" />
+  <link rel="canonical" href="https://codeups.jacky-webworks.com/">
   <meta name="author" content="持原 孝介">
   <!-- ファビコン -->
   <link rel="”icon”" href="/" />
@@ -45,7 +45,7 @@
       <div class="header__wrapper is-sp">
         <div class="header__wrapper-box">
           <div class="header__logo">
-            <a href="#">
+            <a href="index.html">
               <img src="/assets/images/common/top/header-logo-sp.png" alt="ヘッダーロゴ">
             </a>
           </div>
@@ -56,12 +56,12 @@
           </div>
           <div class="header__drawer header-drawer-menu js-drawer-menu">
             <ul class="header-drawer-menu__items">
-              <li class="header-drawer-menu__item"><a href="#">お知らせ</a></li>
-              <li class="header-drawer-menu__item"><a href="#">事業内容</a></li>
-              <li class="header-drawer-menu__item"><a href="#">制作実績</a></li>
-              <li class="header-drawer-menu__item"><a href="#">企業概要</a></li>
-              <li class="header-drawer-menu__item"><a href="#">ブログ</a></li>
-              <li class="header-drawer-menu__item"><a href="#">お問い合わせ</a></li>
+              <li class="header-drawer-menu__item"><a href="news.html">お知らせ</a></li>
+              <li class="header-drawer-menu__item"><a href="business.html">事業内容</a></li>
+              <li class="header-drawer-menu__item"><a href="production.html">制作実績</a></li>
+              <li class="header-drawer-menu__item"><a href="company.html">企業概要</a></li>
+              <li class="header-drawer-menu__item"><a href="blog.html">ブログ</a></li>
+              <li class="header-drawer-menu__item"><a href="contact-page.html">お問い合わせ</a></li>
             </ul>
           </div>
         </div>
@@ -75,12 +75,12 @@
           </a>
         </h1>
         <ul class="header2__items">
-          <li class="header2__item"><a class="header2__item-link" href="#">お知らせ</a></li>
-          <li class="header2__item"><a href="#">事業内容</a></li>
-          <li class="header2__item"><a href="#">制作実績</a></li>
-          <li class="header2__item"><a href="#">企業概要</a></li>
-          <li class="header2__item"><a href="#">ブログ</a></li>
-          <li class="header2__item--single"><a href="#">お問い合わせ</a>
+          <li class="header2__item"><a class="header2__item-link" href="news.html">お知らせ</a></li>
+          <li class="header2__item"><a href="business.html">事業内容</a></li>
+          <li class="header2__item"><a href="production.html">制作実績</a></li>
+          <li class="header2__item"><a href="company.html">企業概要</a></li>
+          <li class="header2__item"><a href="blog.html">ブログ</a></li>
+          <li class="header2__item--single"><a href="contact-page.html">お問い合わせ</a>
           </li>
         </ul>
       </div>
@@ -89,30 +89,32 @@
 
   <main>
     <div class="mainvisual blog">
-      <ol class="breadcrumb  top-detail-breadcrumb detail-breadcrumb" itemscope
-        itemtype="https://schema.org/BreadcrumbList">
-        <li class="breadcrumb__item detail-breadcrumb__item" itemprop="itemListElement" itemscope
-          itemtype="https://schema.org/ListItem">
-          <a itemprop="item" href="index.html">
-            <span class="breadcrumb__item-box" itemprop="name">トップ</span>
-          </a>
-          <meta itemprop="position" content="1" />
-        </li>
-        <li class="breadcrumb__item detail-breadcrumb__item" itemprop="itemListElement" itemscope
-          itemtype="https://schema.org/ListItem">
-          <a itemprop="item" href="blog.html">
-            <span class="breadcrumb__item-box" itemprop="name">ブログ記事一覧</span>
-          </a>
-          <meta itemprop="position" content="2" />
-        </li>
-        <li class="breadcrumb__item detail-breadcrumb__item" itemprop="itemListElement" itemscope
-          itemtype="https://schema.org/ListItem">
-          <a itemprop="item" href="blog-detail.html">
-            <span class="breadcrumb__item-box" itemprop="name">ブログ記事詳細</span>
-          </a>
-          <meta itemprop="position" content="2" />
-        </li>
-      </ol>
+      <div class="blog-width">
+        <ol class="breadcrumb  top-detail-breadcrumb detail-breadcrumb" itemscope
+          itemtype="https://schema.org/BreadcrumbList">
+          <li class="breadcrumb__item detail-breadcrumb__item" itemprop="itemListElement" itemscope
+            itemtype="https://schema.org/ListItem">
+            <a itemprop="item" href="index.html">
+              <span class="breadcrumb__item-box" itemprop="name">トップ</span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </li>
+          <li class="breadcrumb__item detail-breadcrumb__item" itemprop="itemListElement" itemscope
+            itemtype="https://schema.org/ListItem">
+            <a itemprop="item" href="blog.html">
+              <span class="breadcrumb__item-box" itemprop="name">ブログ記事一覧</span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </li>
+          <li class="breadcrumb__item detail-breadcrumb__item" itemprop="itemListElement" itemscope
+            itemtype="https://schema.org/ListItem">
+            <a itemprop="item" href="detail.html">
+              <span class="breadcrumb__item-box" itemprop="name">ブログ記事詳細</span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </li>
+        </ol>
+      </div>
       <!-- /.mainvisual -->
 
 
@@ -133,7 +135,7 @@
               </picture>
 
             </div>
-          
+
             <div class="blog-detail__inner">
 
               <p class="blog-detail__text">
@@ -198,7 +200,7 @@
           <a class="btn btn-article-sp" href="#">おすすめ記事</a>
         </div>
         <div class="blog-page__detail">
-          <a href="#" class="blog-page__wrapper">
+          <a href="detail.html" class="blog-page__wrapper">
 
             <div class="blog-page__header">
               <img src="/assets/images/common/blog/blog6-sp.jpg" alt="ノートパソコンの写真">
@@ -212,7 +214,7 @@
               </div>
             </div>
           </a>
-          <a href="#" class="blog-page__wrapper">
+          <a href="detail.html" class="blog-page__wrapper">
             <div class="blog-page__header">
               <img src="/assets/images/common/blog/blog7-sp.jpg" alt="ノートパソコンの写真">
             </div>
@@ -225,7 +227,7 @@
               </div>
             </div>
           </a>
-          <a href="#" class="blog-page__wrapper">
+          <a href="detail.html" class="blog-page__wrapper">
             <div class="blog-page__header">
               <img src="/assets/images/common/blog/blog8-sp.jpg" alt="ノートパソコンの写真">
             </div>
@@ -238,7 +240,7 @@
               </div>
             </div>
           </a>
-          <a href="#" class="blog-page__wrapper">
+          <a href="detail.html" class="blog-page__wrapper">
             <div class="blog-page__header">
               <img src="/assets/images/common/blog/blog9-sp.jpg" alt="ノートパソコンの写真">
             </div>
@@ -269,10 +271,10 @@
           テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
         </p>
         <div class="contact__top-btn blog-detail__top-btn blog-detail__top-btn-pc">
-          <a class="contact-btn blog-detail__btn" href="#">詳しく見る</a>
+          <a class="contact-btn blog-detail__btn" href="contact-page.html">詳しく見る</a>
         </div>
         <div class="contact__top-btn blog-detail__top-btn blog-detail__top-btn-sp">
-          <a class="contact-btn blog-detail__btn" href="#">お問い合わせへ</a>
+          <a class="contact-btn blog-detail__btn" href="contact-page.html">お問い合わせへ</a>
         </div>
       </div>
     </section>
@@ -286,11 +288,11 @@
         </a>
       </li>
       <ul class="footer__items">
-        <li class="footer__item"><a href="#">事業内容</a></li>
-        <li class="footer__item"><a href="#">制作実績</a></li>
-        <li class="footer__item"><a href="#">企業概要</a></li>
+        <li class="footer__item"><a href="business.html">事業内容</a></li>
+        <li class="footer__item"><a href="production.html">制作実績</a></li>
+        <li class="footer__item"><a href="company.html">企業概要</a></li>
         <li class="footer__item"><a href="#">自社メディア</a></li>
-        <li class="footer__item"><a href="#">お問い合わせ</a></li>
+        <li class="footer__item"><a href="contact-page.html">お問い合わせ</a></li>
       </ul>
     </div>
     <div class="footer__contents--sp">
@@ -300,12 +302,12 @@
         </a>
       </li>
       <ul class="footer__items">
-        <li class="footer__item"><a href="#">トップ</a></li>
-        <li class="footer__item"><a href="#">お知らせ</a></li>
-        <li class="footer__item"><a href="#">事業内容</a></li>
-        <li class="footer__item"><a href="#">企業概要</a></li>
-        <li class="footer__item"><a href="#">ブログ</a></li>
-        <li class="footer__item"><a href="#">お問合せ</a></li>
+        <li class="footer__item"><a href="index.html">トップ</a></li>
+        <li class="footer__item"><a href="news.html">お知らせ</a></li>
+        <li class="footer__item"><a href="business.html">事業内容</a></li>
+        <li class="footer__item"><a href="company.html">企業概要</a></li>
+        <li class="footer__item"><a href="blog.html">ブログ</a></li>
+        <li class="footer__item"><a href="contact-page.html">お問合せ</a></li>
       </ul>
     </div>
     <p class="copyright contact-page__copyright">&copy; 2021 CodeUps Inc.</p>

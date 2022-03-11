@@ -17,7 +17,7 @@
   }
 }
 
-.contact-box__sub-title.contact-box__sub-title--contact-page{
+.contact-box__sub-title.contact-box__sub-title--contact-page {
   font-size: rem(25);
   letter-spacing: rem(2);
 }
@@ -26,7 +26,7 @@
   padding-left: rem(66);
 
   @include mq(md) {
-    ext-align: left;
+    text-align: left;
     padding-left: rem(88);
   }
 }

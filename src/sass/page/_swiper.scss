@@ -1,7 +1,7 @@
 // indexページ
 
 
-.swiper-pagination-bullet { 
+.swiper-pagination-bullet {
   background-color: #C4C4C4;
   opacity: 1;
 }
@@ -109,7 +109,7 @@
   width: auto;
   height: 100%;
 
-  @include mq(md){
+  @include mq(md) {
     object-fit: cover;
   }
 }
@@ -136,4 +136,3 @@
 .slide-img img {
   display: block;
 }
-

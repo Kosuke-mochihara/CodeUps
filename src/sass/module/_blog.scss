@@ -19,6 +19,7 @@
   flex-wrap: wrap;
   font-size: rem(16);
   margin-top: rem(16);
+  letter-spacing: rem(2);
 }
 
 .blog__item-reverse {
@@ -34,6 +35,14 @@
     padding-left: rem(10);
   }
 }
+
+
+// .blog__item-reverse--production{
+//   padding-top: rem(1.5);
+//   letter-spacing: rem(2);
+// }
+
+
 
 .blog__item {
   margin-left: rem(23);

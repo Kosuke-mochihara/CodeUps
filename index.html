@@ -5,19 +5,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
+  
   <!-- meta情報 -->
   <title>CodeUps</title>
-  <meta name="description" content="ここにでぃすくりぷしょん入ります。ここにでぃすくりぷしょん入ります。ここにでぃすくりぷしょん入ります。" />
-  <meta name="keywords" content="CodeUps" />
+  <meta name="description" content="ここにディスクリプション入ります。ここにディスクリプション入ります。ここにディスクリプション入ります。ここにディスクリプション入ります。" />
+  <meta name="keywords" content="CodeUpsのキーワードはここです" />
   <!-- ogp -->
   <meta property="og:title" content="CodeUps" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://codeups.jacky-webworks.com/" />
   <meta property="og:image" content="/assets/images/common/top/top-pc1.jpg" />
   <meta property="og:site_name" content="CodeUps" />
-  <meta property="og:description" content="ここにでぃすくりぷしょん入ります。ここにでぃすくりぷしょん入ります。ここにでぃすくりぷしょん入ります。" />
-  <meta name=”robots” content=”noindex”>
-  <link rel=”canonical” href=”https://codeups.jacky-webworks.com/”>
+  <meta property="og:description" content="ここにディスクリプション入ります。ここにディスクリプション入ります。ここにディスクリプション入ります。ここにディスクリプション入ります。" />
+  <meta name="robots" content="noindex" />
+  <link rel="canonical" href="https://codeups.jacky-webworks.com/">
   <meta name="author" content="持原 孝介">
   <!-- ファビコン -->
   <link rel="”icon”" href="/" />
@@ -36,16 +37,15 @@
   <link href=" https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Noto+Serif+JP&display=swap" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-  <script defer type="text/javascript" src="./assets/js/script.js"></script>
 </head>
 
 <body>
   <header class="header">
     <div class="header-sp is-sp">
-      <div class="header__wrapper is-sp">
+      <div class="header__wrapper">
         <div class="header__wrapper-box">
           <div class="header__logo">
-            <a href="#">
+            <a href="index.html">
               <img src="/assets/images/common/top/header-logo-sp.png" alt="ヘッダーロゴ">
             </a>
           </div>
@@ -56,12 +56,12 @@
           </div>
           <div class="header__drawer header-drawer-menu js-drawer-menu">
             <ul class="header-drawer-menu__items">
-              <li class="header-drawer-menu__item"><a href="#">お知らせ</a></li>
-              <li class="header-drawer-menu__item"><a href="#">事業内容</a></li>
-              <li class="header-drawer-menu__item"><a href="#">制作実績</a></li>
-              <li class="header-drawer-menu__item"><a href="#">企業概要</a></li>
-              <li class="header-drawer-menu__item"><a href="#">ブログ</a></li>
-              <li class="header-drawer-menu__item"><a href="#">お問い合わせ</a></li>
+              <li class="header-drawer-menu__item"><a href="news.html">お知らせ</a></li>
+              <li class="header-drawer-menu__item"><a href="business.html">事業内容</a></li>
+              <li class="header-drawer-menu__item"><a href="production.html">制作実績</a></li>
+              <li class="header-drawer-menu__item"><a href="company.html">企業概要</a></li>
+              <li class="header-drawer-menu__item"><a href="blog.html">ブログ</a></li>
+              <li class="header-drawer-menu__item"><a href="contact-page.html">お問い合わせ</a></li>
             </ul>
           </div>
         </div>
@@ -75,12 +75,12 @@
           </a>
         </h1>
         <ul class="header2__items">
-          <li class="header2__item"><a class="header2__item-link" href="#">お知らせ</a></li>
-          <li class="header2__item"><a href="#">事業内容</a></li>
-          <li class="header2__item"><a href="#">制作実績</a></li>
-          <li class="header2__item"><a href="#">企業概要</a></li>
-          <li class="header2__item"><a href="#">ブログ</a></li>
-          <li class="header2__item--single"><a href="#">お問い合わせ</a>
+          <li class="header2__item"><a class="header2__item-link" href="news.html">お知らせ</a></li>
+          <li class="header2__item"><a href="business.html">事業内容</a></li>
+          <li class="header2__item"><a href="production.html">制作実績</a></li>
+          <li class="header2__item"><a href="company.html">企業概要</a></li>
+          <li class="header2__item"><a href="blog.html">ブログ</a></li>
+          <li class="header2__item--single"><a href="contact-page.html">お問い合わせ</a>
           </li>
         </ul>
       </div>
@@ -88,9 +88,9 @@
   </header>
 
   <main>
-    <section class="mainvisual">
+    <div class="mainvisual mainvisual-top">
       <div class="mainvisual__content swiper-container">
-        <div class=" swiper-wrapper">
+        <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="slide-img mainvisual__img">
               <picture>
@@ -117,15 +117,15 @@
           </div>
         </div>
         <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination1"></div>
       </div>
       <div class="mainvisual__contents">
-        <h1 class="mainvisual__title">メインタイトルが入ります</h1>
+        <div class="mainvisual__title">メインタイトルが入ります</div>
         <p class="mainvisual__subtitle">サブタイトルが入ります</p>
       </div>
-    </section>
+    </div>
 
-    <section class="news">
+    <div class="news">
       <div class="news __mainvisual mainvisual__wrapper">
         <div class="mainvisual__header">
           <time datetime="2020-07-20" class="mainvisual__date">2020.07.20</time>
@@ -143,7 +143,7 @@
           <a class="btn" href="#">すべて見る</a>
         </div>
       </div>
-    </section>
+    </div>
     <!-- /.mainvisual -->
 
     <div class="diagonal-line">
@@ -207,27 +207,24 @@
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <picture>
-                      <source media="(min-width: 768px)" src="/assets/images/common/swiper/swiper__top-pc1.jpg"
-                        alt="制作実績写真1">
+                      <source media="(min-width: 768px)" srcset="/assets/images/common/swiper/swiper__top-pc1.jpg">
                       <img src="/assets/images/common/swiper/swiper__top-sp1.jpg" alt="制作実績写真1">
                     </picture>
                   </div>
                   <div class="swiper-slide">
                     <picture>
-                      <source media="(min-width: 768px)" src="/assets/images/common/swiper/swiper__top-pc2.jpg"
-                        alt="制作実績写真2">
+                      <source media="(min-width: 768px)" srcset="/assets/images/common/swiper/swiper__top-pc2.jpg">
                       <img src="/assets/images/common/swiper/swiper__top-sp2.jpg" alt="制作実績写真2">
                     </picture>
                   </div>
                   <div class="swiper-slide">
                     <picture>
-                      <source media="(min-width: 768px)" src="/assets/images/common/swiper/swiper__top-pc1.jpg"
-                        alt="制作実績写真3">
+                      <source media="(min-width: 768px)" srcset="/assets/images/common/swiper/swiper__top-pc1.jpg">
                       <img src="/assets/images/common/swiper/swiper__top-sp3.jpg" alt="制作実績写真3">
                     </picture>
                   </div>
                 </div>
-                <div class="swiper-pagination"></div>
+                <div class="swiper-pagination1"></div>
               </div>
             </div>
             <div class="works__bottom works-contents__bottom">
@@ -278,7 +275,7 @@
             <span class="title-box__sub-title">ブログ</span>
           </div>
           <div class="blog__contents cards">
-            <a href="" class="card__item card">
+            <a href="blog.html" class="card__item card">
               <div class="card__header">
                 <img src="/src/images/common/blog/blog-sp1.jpg" alt="ブログページのパソコンの写真1">
                 <div class="card__new-icon">New</div>
@@ -294,7 +291,7 @@
                 </div>
               </div>
             </a>
-            <a href="" class="card__item card">
+            <a href="blog.html" class="card__item card">
               <div class="card__header">
                 <img src="/assets/images/common/blog/blog-sp2.jpg" alt="ブログページのパソコンの写真2">
               </div>
@@ -309,7 +306,7 @@
                 </div>
               </div>
             </a>
-            <a href="" class="card__item card">
+            <a href="blog.html" class="card__item card">
               <div class="card__header">
                 <img src="/assets/images/common/blog/blog-sp3.jpg" alt="ブログページのパソコンの写真3">
               </div>
@@ -326,7 +323,7 @@
             </a>
           </div>
           <div class="blog__btn">
-            <a class="btn motion__btn" href="#">詳しく見る</a>
+            <a class="btn motion__btn" href="contact-page.html">詳しく見る</a>
           </div>
         </div>
       </section>
@@ -343,44 +340,44 @@
           テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
         </p>
         <div class="contact__top-btn">
-          <a class="contact-btn" href="#">お問い合わせへ</a>
+          <a class="contact-btn" href="contact-page.html">お問い合わせへ</a>
         </div>
       </div>
     </section>
     <!-- contact -->
   </main>
 
-  
+
 
   <footer class="footer footer__contact-finish">
     <div class="footer__contents--pc">
-      <li class="footer__item--decoration">
+      <div class="footer__item--decoration">
         <a href="">
           <img src="/assets/images/common/top/footer-logo-pc.png" alt="">
         </a>
-      </li>
+      </div>
       <ul class="footer__items">
-        <li class="footer__item"><a href="#">お知らせ</a></li>
-        <li class="footer__item"><a href="#">事業内容</a></li>
-        <li class="footer__item"><a href="#">制作実績</a></li>
-        <li class="footer__item"><a href="#">企業概要</a></li>
-        <li class="footer__item"><a href="#">ブログ</a></li>
-        <li class="footer__item"><a href="#">お問い合わせ</a></li>
+        <li class="footer__item"><a href="news.html">お知らせ</a></li>
+        <li class="footer__item"><a href="business.html">事業内容</a></li>
+        <li class="footer__item"><a href="production.html">制作実績</a></li>
+        <li class="footer__item"><a href="company.html">企業概要</a></li>
+        <li class="footer__item"><a href="#">自社メディア</a></li>
+        <li class="footer__item"><a href="contact-page.html">お問い合わせ</a></li>
       </ul>
     </div>
     <div class="footer__contents--sp">
-      <li class="footer__item--decoration">
-        <a href="">
+      <div class="footer__item--decoration">
+        <a href="#">
           <img src="/assets/images/common/top/footer-logo-sp.png" alt="">
         </a>
-      </li>
+      </div>
       <ul class="footer__items">
-        <li class="footer__item"><a href="#">トップ</a></li>
-        <li class="footer__item"><a href="#">お知らせ</a></li>
-        <li class="footer__item"><a href="#">事業内容</a></li>
-        <li class="footer__item"><a href="#">企業概要</a></li>
-        <li class="footer__item"><a href="#">ブログ</a></li>
-            <li class="footer__item"><a href="#">お問合せ</a></li>
+        <li class="footer__item"><a href="index.html">トップ</a></li>
+        <li class="footer__item"><a href="news.html">お知らせ</a></li>
+        <li class="footer__item"><a href="business.html">事業内容</a></li>
+        <li class="footer__item"><a href="company.html">企業概要</a></li>
+        <li class="footer__item"><a href="blog.html">ブログ</a></li>
+        <li class="footer__item"><a href="contact-page.html">お問合せ</a></li>
       </ul>
     </div>
     <p class="copyright">&copy; 2021 CodeUps Inc.</p>
