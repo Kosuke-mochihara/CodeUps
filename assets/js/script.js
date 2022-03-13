@@ -44,82 +44,112 @@ jQuery(function ($) {
       scrollTop: targetY
     }, time, 'swing');
     return false;
+  }); // フローティング
+
+  jQuery(window).on("scroll", function ($) {
+    if (jQuery(this).scrollTop() > 100) {
+      jQuery('.floating').show();
+    } else {
+      jQuery('.floating').hide();
+    }
   });
-}); // フローティング
+  jQuery('.floating').click(function () {
+    jQuery('body,html').animate({
+      scrollTop: 0
+    }, 500);
+    return false;
+  }); // var swipeOption = {
+  //   loop: true,
+  //   effect: 'fade',
+  //   autoplay: {
+  //     delay: 4000,
+  //     disableOnInteraction: false
+  //   },
+  //   speed: 2000,
+  //   pagination: {
+  //     el: '.swiper-pagination',
+  //     type: 'bullets',  //ページネーションのタイプ
+  //     clickable: true
+  //   }
+  // };
+  // new Swiper('.swiper-container', swipeOption); //メイン
+  //スライダー1
 
-jQuery(window).on("scroll", function ($) {
-  if (jQuery(this).scrollTop() > 100) {
-    jQuery('.floating').show();
-  } else {
-    jQuery('.floating').hide();
-  }
+  var slider1 = new Swiper('.js-slider-1', {
+    loop: true,
+    effect: 'fade',
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false
+    },
+    speed: 2000,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      //ページネーションのタイプ
+      clickable: true
+    }
+  }); //スライダー2
+
+  var slider2 = new Swiper('.js-slider-2', {
+    loop: true,
+    effect: 'slide',
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false
+    },
+    speed: 2000,
+    pagination: {
+      el: '.swiper-pagination1',
+      clickable: true
+    }
+  });
+  var slider = new Swiper('.gallery-slider', {
+    slidesPerView: 1,
+    centeredSlides: true,
+    loop: true,
+    loopedSlides: 8,
+    //スライドの枚数と同じ値を指定
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    }
+  }); //サムネイル
+
+  var thumbs = new Swiper('.gallery-thumbs', {
+    slidesPerView: 'auto',
+    spaceBetween: 24,
+    centeredSlides: true,
+    loop: true,
+    slideToClickedSlide: true
+  }); //4系～
+  //メインとサムネイルを紐づける
+
+  slider.controller.control = thumbs;
+  thumbs.controller.control = slider; //メイン PC
+
+  var slider = new Swiper('.gallery-slider-pc', {
+    slidesPerView: 1,
+    centeredSlides: true,
+    loop: true,
+    loopedSlides: 8,
+    //スライドの枚数と同じ値を指定
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    }
+  }); //サムネイル
+
+  var thumbs = new Swiper('.gallery-thumbs-pc', {
+    slidesPerView: '8',
+    spaceBetween: 8,
+    centeredSlides: true,
+    loop: true,
+    slideToClickedSlide: true
+  }); //4系～
+  //メインとサムネイルを紐づける
+
+  slider.controller.control = thumbs;
+  thumbs.controller.control = slider;
+  new Swiper('.swiper-container', swipeOption);
 });
-jQuery('.floating').click(function () {
-  jQuery('body,html').animate({
-    scrollTop: 0
-  }, 500);
-  return false;
-});
-var swipeOption = {
-  loop: true,
-  effect: 'fade',
-  autoplay: {
-    delay: 4000,
-    disableOnInteraction: false
-  },
-  speed: 2000,
-  pagination: {
-    el: '.swiper-pagination1',
-    clickable: true
-  }
-};
-new Swiper('.swiper-container', swipeOption); //メイン
-
-var slider = new Swiper('.gallery-slider', {
-  slidesPerView: 1,
-  centeredSlides: true,
-  loop: true,
-  loopedSlides: 8,
-  //スライドの枚数と同じ値を指定
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
-  }
-}); //サムネイル
-
-var thumbs = new Swiper('.gallery-thumbs', {
-  slidesPerView: 'auto',
-  spaceBetween: 24,
-  centeredSlides: true,
-  loop: true,
-  slideToClickedSlide: true
-}); //4系～
-//メインとサムネイルを紐づける
-
-slider.controller.control = thumbs;
-thumbs.controller.control = slider; //メイン PC
-
-var slider = new Swiper('.gallery-slider-pc', {
-  slidesPerView: 1,
-  centeredSlides: true,
-  loop: true,
-  loopedSlides: 8,
-  //スライドの枚数と同じ値を指定
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
-  }
-}); //サムネイル
-
-var thumbs = new Swiper('.gallery-thumbs-pc', {
-  slidesPerView: '8',
-  spaceBetween: 8,
-  centeredSlides: true,
-  loop: true,
-  slideToClickedSlide: true
-}); //4系～
-//メインとサムネイルを紐づける
-
-slider.controller.control = thumbs;
-thumbs.controller.control = slider;
-new Swiper('.swiper-container', swipeOption);

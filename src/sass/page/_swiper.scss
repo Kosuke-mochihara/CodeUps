@@ -19,12 +19,13 @@
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-  left: -2px;
-  bottom: 3px;
+  margin-left: 0;
+  margin-top: 0;
 
   @include mq(md) {
-    left: -21px;
-    bottom: 8px;
+
+    margin-left: rem(-20);
+    padding-top: rem(5);
   }
 }
 

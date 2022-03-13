@@ -34,7 +34,7 @@
 .content {
   color: #fff;
   text-align: center;
-  padding-bottom: rem(101);
+  padding-bottom: rem(100);
 
   @include mq(md) {
     padding-bottom: rem(71);
@@ -509,7 +509,7 @@
 }
 
 .swiper-container__box {
-  padding-bottom: rem(24);
+  // padding-bottom: rem(24);
   background-color: #333;
 
   @include mq(md) {

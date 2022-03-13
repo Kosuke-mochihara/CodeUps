@@ -33,8 +33,12 @@ html {
 }
 
 /* Set core body defaults */
-_:lang(x)::-ms-, body {
+body {
   min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-size: rem(16);
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */

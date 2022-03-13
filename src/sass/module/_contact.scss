@@ -114,9 +114,7 @@
   transform: scale(1, 1);
 }
 
-.contact__btn{
-
-}
+.contact__btn {}
 
 .contact-motion__btn {
   display: block;
@@ -163,6 +161,15 @@
   transform: scale(1, 1);
 }
 
-.contact__top-btn.news-btn{
+.contact__top-btn.news-btn {
   margin-top: rem(56);
+}
+
+.contact-topmain {
+  margin-top: rem(120);
+
+  @include mq(md) {
+    margin-top: rem(148);
+    padding-bottom: rem(147);
+  }
 }

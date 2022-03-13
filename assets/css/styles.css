@@ -802,7 +802,7 @@ select::-ms-expand {
   .contact-box__sub-title {
     padding-bottom: 1.75rem;
     font-size: 1.875rem;
-    letter-spacing: 0.03125rem;
+    letter-spacing: 0.125rem;
     bottom: -39px;
   }
 }
@@ -831,6 +831,13 @@ select::-ms-expand {
     padding-top: 0.875rem;
     padding-bottom: 0.875rem;
     z-index: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact-btn-top {
+    padding-right: 0.5625rem;
+    padding-top: 1rem;
   }
 }
 
@@ -1360,6 +1367,18 @@ select::-ms-expand {
 .contact__top-btn.news-btn {
   margin-top: 56px;
   margin-top: 3.5rem;
+}
+
+.contact-topmain {
+  margin-top: 120px;
+  margin-top: 7.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-topmain {
+    margin-top: 9.25rem;
+    padding-bottom: 9.1875rem;
+  }
 }
 
 .content__items {
@@ -2370,9 +2389,19 @@ select::-ms-expand {
   }
 }
 
+.mainvisual {
+  position: relative;
+}
+
+.mainvisual__img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
 .mainvisual__img::after {
   position: absolute;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background-color: #111;
   opacity: 0.2;
@@ -2390,6 +2419,7 @@ select::-ms-expand {
   color: #fff;
   text-align: center;
   letter-spacing: 0.5px;
+  letter-spacing: 0.03125rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -2399,7 +2429,6 @@ select::-ms-expand {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     width: 100%;
-    letter-spacing: normal;
   }
 }
 
@@ -2992,7 +3021,7 @@ select::-ms-expand {
 
 @media screen and (min-width: 768px) {
   .overview {
-    padding-top: 7.4375rem;
+    padding-top: 7.5rem;
   }
 }
 
@@ -3506,7 +3535,7 @@ select::-ms-expand {
     background: linear-gradient(90deg, transparent 0%, transparent 30%, #333 30%, #333 100%);
     padding-top: 5rem;
     padding-left: 5.625rem;
-    padding-bottom: 2.625rem;
+    padding-bottom: 0.75rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5548,8 +5577,8 @@ select::-ms-expand {
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-  left: -2px;
-  bottom: 3px;
+  margin-left: 0;
+  margin-top: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -5557,8 +5586,8 @@ select::-ms-expand {
   .swiper-pagination-bullets.swiper-pagination-horizontal,
   .swiper-pagination-custom,
   .swiper-pagination-fraction {
-    left: -21px;
-    bottom: 8px;
+    margin-left: -1.25rem;
+    padding-top: 0.3125rem;
   }
 }
 
@@ -5724,8 +5753,8 @@ select::-ms-expand {
 .content {
   color: #fff;
   text-align: center;
-  padding-bottom: 101px;
-  padding-bottom: 6.3125rem;
+  padding-bottom: 100px;
+  padding-bottom: 6.25rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -6209,8 +6238,6 @@ select::-ms-expand {
 }
 
 .swiper-container__box {
-  padding-bottom: 24px;
-  padding-bottom: 1.5rem;
   background-color: #333;
 }
 

@@ -45,7 +45,9 @@ jQuery(function ($) {
     }, time, 'swing');
     return false;
   });
-}); // フローティング
+
+
+// フローティング
 
 jQuery(window).on("scroll", function ($) {
   if (jQuery(this).scrollTop() > 100) {
@@ -61,20 +63,61 @@ jQuery('.floating').click(function () {
   return false;
 });
 
-var swipeOption = {
-  loop: true,
-  effect: 'fade',
-  autoplay: {
+
+// var swipeOption = {
+//   loop: true,
+//   effect: 'fade',
+//   autoplay: {
+//     delay: 4000,
+//     disableOnInteraction: false
+//   },
+//   speed: 2000,
+//   pagination: {
+//     el: '.swiper-pagination',
+//     type: 'bullets',  //ページネーションのタイプ
+//     clickable: true
+//   }
+// };
+// new Swiper('.swiper-container', swipeOption); //メイン
+
+
+  //スライダー1
+  var slider1 = new Swiper ('.js-slider-1', {
+    loop: true,
+    effect: 'fade',
+    autoplay: {
     delay: 4000,
-    disableOnInteraction: false
-  },
-  speed: 2000,
-  pagination: {
-    el: '.swiper-pagination1',
-    clickable: true
-  }
-};
-new Swiper('.swiper-container', swipeOption); //メイン
+    disableOnInteraction: false,
+    },
+    speed: 2000,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',  //ページネーションのタイプ
+      clickable: true,
+    }
+  });
+
+  //スライダー2
+  var slider2 = new Swiper ('.js-slider-2', {
+    loop: true,
+    effect: 'slide',
+    autoplay: {
+      delay: 4000,
+    disableOnInteraction: false,
+    },
+    speed: 2000,
+    pagination: {
+      el: '.swiper-pagination1',
+      clickable: true,
+    }
+  });
+
+
+
+
+
+
+
 
 var slider = new Swiper('.gallery-slider', {
   slidesPerView: 1,
@@ -124,3 +167,5 @@ var thumbs = new Swiper('.gallery-thumbs-pc', {
 slider.controller.control = thumbs;
 thumbs.controller.control = slider; 
 new Swiper('.swiper-container', swipeOption);
+
+}); 
