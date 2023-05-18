@@ -1,13 +1,9 @@
 .mainvisual {
   position: relative;
 }
-// .mainvisual__top {
-//   position: relative;
-// }
-
 
 .mainvisual__img {
-  position: relative;
+  // position: relative;
   height: 100%;
   width: 100%;
 }
@@ -15,8 +11,9 @@
 
 
 .mainvisual__img::after {
-  position: absolute;
-  height: 100vh;
+    position: absolute;
+    content: "";
+  height: 100%;
   width: 100%;
   background-color: #111;
   opacity: 0.2;

@@ -11,10 +11,16 @@
   background-color: #fff;
 }
 
-.blog-page__bottom:hover {
-  color: #fff;
-  background-color: #333;
-}
+// .blog-page__bottom:hover {
+//   color: #fff;
+//   background-color: #333;
+//   transition: color 0.8s, text-decoration .3s;
+
+//   .blog-page__category {
+//     color: #333;
+//     transition: color 0.8s, text-decoration .3s;
+//   }
+// }
 
 
 .blog-page__detail {
@@ -34,6 +40,48 @@
     margin-right: rem(32);
   }
 }
+.blog-page__wrapper {
+  display: block;
+
+  @include mq(md) {
+    margin-right: rem(32);
+  }
+}
+
+
+
+
+
+
+.blog-page__wrapper:hover {
+
+  .blog-page__bottom {
+    color: #fff;
+    background-color: #333;
+    transition: color 0.8s, text-decoration .3s;
+  }
+
+  .blog-page__category {
+    color: #333;
+    transition: color 0.8s, text-decoration .3s;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .blog-page__wrapper+.blog-page__wrapper {
   margin-top: rem(24);

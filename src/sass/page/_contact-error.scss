@@ -1,8 +1,11 @@
 .contact__wrapper {
     @include mq(md) {
-        padding-left: rem(123);
-        padding-right: rem(280);
+        // padding-left: rem(123);
+        // padding-right: rem(280);
         margin-top: rem(11.5);
+        width: rem(884);
+        max-width: 100%;
+        margin: auto;
     }
 }
 

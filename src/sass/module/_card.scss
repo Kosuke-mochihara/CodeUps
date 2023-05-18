@@ -7,6 +7,22 @@
   }
 }
 
+.card:hover {
+
+  .card__footer {
+    color: #fff;
+    background-color: #333;
+    transition: color 0.8s, text-decoration .3s;
+  }
+
+  .card__category {
+    color: #333;
+    transition: color 0.8s, text-decoration .3s;
+  }
+
+
+}
+
 .card+.card {
 
   @include mq(md) {
@@ -71,11 +87,17 @@
 .card__footer {
   color: #333;
   background-color: #fff;
+  transition: color 0.8s, text-decoration .3s;
 }
 
 .card__footer:hover {
   color: #fff;
   background-color: #333;
+
+  .card__category {
+    color: #333;
+    transition: color 0.8s, text-decoration .3s;
+  }
 }
 
 
@@ -140,7 +162,7 @@
     padding-left: rem(24);
     padding-right: rem(10);
     text-align: left;
-    padding-top: 0;
+    padding-top: rem(4);
     letter-spacing: 1px;
     line-height: 2;
   }
@@ -151,11 +173,9 @@
 }
 
 .card__box {
-  // color: #333;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  // background-color: #fff;
   padding-top: rem(7);
   padding-left: rem(23);
   padding-right: rem(23);

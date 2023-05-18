@@ -20,7 +20,7 @@
   <link rel="canonical" href="https://codeups.jacky-webworks.com/">
   <meta name="author" content="持原 孝介">
   <!-- ファビコン -->
-  <link rel="”icon”" href="/" />
+  <link rel="shortcut icon" href="./src/images/common/イカアイコン3.svg" />
 
   <!-- スライダー -->
 
@@ -119,101 +119,89 @@
 </div>
 
       
-      <div class="contact-page__wrapper contact-error__wrapper is-sp">
-        <div class="contact-page__content">
-          <div class="contact-page__head">
-            <p class="contact-page__top">※会社名・団体名</p>
-          </div>
-          <div class="contact-page__item">
-            <input class="contact-page-text__text" type="text" placeholder="テキストがはいります">
-          </div>
-        </div>
-        <div class="contact-page__content">
-          <div class="contact-page__head">
-            <p class="contact-page__top">※部署名</p>
-          </div>
-          <div class="contact-page__item">
-            <input class="contact-page-text__text" type="text" placeholder="テキストがはいります">
-          </div>
-        </div>
-        <div class="contact-page__content">
-          <div class="contact-page__head">
-            <p class="contact-page__top">※お名前</p>
-          </div>
-          <div class="contact-page__item">
-            <input class="contact-page-text__text" type="text" placeholder="テキストがはいります">
-          </div>
-        </div>
-        <div class="contact-page__content">
-          <div class="contact-page__head">
-            <p class="contact-page__top">※ふりがな</p>
-          </div>
-          <div class="contact-page__item">
-            <input class="contact-page-text__text" type="text" placeholder="テキストがはいります">
-          </div>
-        </div>
-        <div class="contact-page__content contact-page__content--email sp">
-          <div class="contact-page__head">
-            <p class="contact-page__top">※メールアドレス</p>
-          </div>
-          <div class="contact-page__item">
-            <input class="contact-page-text__text" type="email" placeholder="テキストがはいります">
-          </div>
-        </div>
-        <div class="contact-page__content">
-          <div class="contact-page__head">
-            <p class="contact-page__top">※お問い合わせ内容</p>
-          </div>
-          <div class="contact-page__item contact-page-textarea">
-            <textarea class="contact-page-textarea__text" placeholder="テキストがはいります"></textarea>
-          </div>
-        </div>
-     
-      </div>
+<form class="contact-page__wrapper is-sp">
+  <dl class="contact-page__contents">
+    <div class="contact-page__content">
+      <dt class="contact-page__head">会社名・団体名
+      </dt>
+      <dd class="contact-page__item">
+        <input class="contact-page-text__text" type="text" placeholder="テキストがはいります">
+      </dd>
+    </div>
+    <div class="contact-page__content">
+      <dt class="contact-page__head">部署名
+      </dt>
+      <dd class="contact-page__item">
+        <input class="contact-page-text__text" type="text" placeholder="テキストがはいります">
+      </dd>
+    </div>
+    <div class="contact-page__content">
+      <dt class="contact-page__head">お名前
+      </dt>
+      <dd class="contact-page__item">
+        <input class="contact-page-text__text" type="text" placeholder="テキストがはいります">
+      </dd>
+    </div>
+    <div class="contact-page__content">
+      <dt class="contact-page__head">ふりがな
+      </dt>
+      <dd class="contact-page__item">
+        <input class="contact-page-text__text" type="text" placeholder="テキストがはいります">
+      </dd>
+    </div>
+    <div class="contact-page__content contact-page__content--email sp">
+      <dt class="contact-page__head">メールアドレス
+      </dt>
+      <dd class="contact-page__item">
+        <input class="contact-page-text__text" type="email" placeholder="テキストがはいります">
+      </dd>
+    </div>
+    <div class="contact-page__content">
+      <dt class="contact-page__head">お問い合わせ内容
+      </dt>
+      <dd class="contact-page__item contact-page-textarea">
+        <textarea class="contact-page-textarea__text" placeholder="テキストがはいります"></textarea>
+      </dd>
+    </div>
+  </dl>
+</form>
 
-      <!-- SP用 -->
-      <div class="contact__wrapper is-pc">
-        <div class="contact__content">
-          <div class="contact__head">
-            <p class="contact__top">※会社名</p>
-          </div>
-          <div class="contact__item">
-            <input class="contact-text__text" type="text" placeholder="テキストがはいります">
-          </div>
-        </div>
-        <div class="contact__content">
-          <div class="contact__head">
-            <p class="contact__top">※お名前</p>
-          </div>
-          <div class="contact__item">
-            <input class="contact-text__text" type="text" placeholder="テキストがはいります">
-          </div>
-        </div>
-        <div class="contact__content">
-          <div class="contact__head">
-            <p class="contact__top">※ふりがな</p>
-          </div>
-          <div class="contact__item">
-            <input class="contact-text__text" type="text" placeholder="テキストがはいります">
-          </div>
-        </div>
-        <div class="contact__content">
-          <div class="contact__head">
-            <p class="contact__top">※メールアドレス</p>
-          </div>
-          <div class="contact__item">
-            <input class="contact-text__text" type="email" placeholder="テキストがはいります">
-          </div>
-        </div>
-        <div class="contact__content">
-          <div class="contact__head">
-            <p class="contact__top">※お問い合わせ内容</p>
-          </div>
-          <div class="contact__item contact-textarea">
-            <textarea class="contact-textarea__text" placeholder="テキストがはいります"></textarea>
-          </div>
-        </div>
+<!-- SP用 -->
+<form class="contact__wrapper is-pc">
+
+  <dl class="contact-page__contents">
+    <div class="contact__content">
+      <dt class="contact__head">会社名</dt>
+      <dd class="contact__item">
+        <input class="contact-text__text" type="text" placeholder="テキストがはいります">
+      </dd>
+    </div>
+    <div class="contact__content">
+      <dt class="contact__head">お名前</dt>
+      <dd class="contact__item">
+        <input class="contact-text__text" type="text" placeholder="テキストがはいります">
+      </dd>
+    </div>
+    <div class="contact__content">
+      <dt class="contact__head">ふりがな</dt>
+      <dd class="contact__item">
+        <input class="contact-text__text" type="text" placeholder="テキストがはいります">
+      </dd>
+    </div>
+    <div class="contact__content">
+      <dt class="contact__head">メールアドレス</dt>
+      <dd class="contact__item">
+        <input class="contact-text__text" type="email" placeholder="テキストがはいります">
+      </dd>
+    </div>
+    <div class="contact__content">
+      <dt class="contact__head">お問い合わせ内容</dt>
+      <div class="contact__item contact-textarea">
+        <textarea class="contact-textarea__text" placeholder="テキストがはいります"></textarea>
       </div>
+    </div>
+  </dl>
+</form>
  
       <div class="contact-page__form-btn">
         <a class="btn contact-page__top-btn--bg" href="contact-completed.html">送信</a>
@@ -235,27 +223,27 @@
     </div>
   </main>
 
-  <footer class="footer footer__contact-finish footer-contact-page">
+  <footer class="footer footer__contact-finish">
     <div class="footer__contents--pc">
-      <li class="footer__item--decoration">
+      <div class="footer__item--decoration">
         <a href="">
-          <img src="/assets/images/common/top/footer-logo-pc.png" alt="">
+          <img src="/assets/images/common/top/footer-logo-pc.png" alt="ロゴ">
         </a>
-      </li>
+      </div>
       <ul class="footer__items">
         <li class="footer__item"><a href="business.html">事業内容</a></li>
         <li class="footer__item"><a href="production.html">制作実績</a></li>
         <li class="footer__item"><a href="company.html">企業概要</a></li>
-        <li class="footer__item"><a href="#">自社メディア</a></li>
+        <li class="footer__item"><a href="detail.html">自社メディア</a></li>
         <li class="footer__item"><a href="contact-page.html">お問い合わせ</a></li>
       </ul>
     </div>
     <div class="footer__contents--sp">
-      <li class="footer__item--decoration">
+      <div class="footer__item--decoration">
         <a href="">
-          <img src="/assets/images/common/top/footer-logo-sp.png" alt="">
+          <img src="/assets/images/common/top/footer-logo-sp.png" alt="ロゴ">
         </a>
-      </li>
+      </div>
       <ul class="footer__items">
         <li class="footer__item"><a href="index.html">トップ</a></li>
         <li class="footer__item"><a href="news.html">お知らせ</a></li>

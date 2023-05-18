@@ -13,19 +13,20 @@ jQuery(function ($) {
       // 画面が指定pxより上ならボタンを非表示
       topBtn.fadeOut();
     }
-  }); // ドロワー
-
-  $('.js-hamburger').on('click', function () {
-    if ($('.js-hamburger').hasClass('open')) {
-      $('.js-drawer-menu').fadeOut();
-      $('.js-overlay').fadeOut();
-      $(this).removeClass('open');
-    } else {
-      $('.js-drawer-menu').fadeIn();
-      $('.js-overlay').fadeIn();
-      $(this).addClass('open');
-    }
-  }); // ボタンをクリックしたらスクロールして上に戻る
+  }); 
+  
+  // ドロワー　（下層ページ重複のため削除）
+  // $('.js-hamburger').on('click', function () {
+  //   if ($('.js-hamburger').hasClass('open')) {
+  //     $('.js-drawer-menu').fadeOut();
+  //     $('.js-overlay').fadeOut();
+  //     $(this).removeClass('open');
+  //   } else {
+  //     $('.js-drawer-menu').fadeIn();
+  //     $('.js-overlay').fadeIn();
+  //     $(this).addClass('open');
+  //   }
+  // }); // ボタンをクリックしたらスクロールして上に戻る
 
   topBtn.click(function () {
     $('body,html').animate({
